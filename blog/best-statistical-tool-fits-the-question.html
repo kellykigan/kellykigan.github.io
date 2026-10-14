@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#064e3b">
+<title>The best statistical tool is the one that fits the question | Kelly Kigan</title>
+<meta name="description" content="Stata, R, Excel or SPSS? The tool matters less than the question. A simple way to match question type to method in development research.">
+<meta name="author" content="Kelly Kigan">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kellykigan.github.io/blog/best-statistical-tool-fits-the-question.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The best statistical tool is the one that fits the question | Kelly Kigan">
+<meta property="og:description" content="Stata, R, Excel or SPSS? The tool matters less than the question. A simple way to match question type to method in development research.">
+<meta property="og:url" content="https://kellykigan.github.io/blog/best-statistical-tool-fits-the-question.html">
+<meta property="og:site_name" content="Kelly Kigan">
+<meta property="article:published_time" content="2026-08-31">
+<meta property="article:author" content="Kelly Kigan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The best statistical tool is the one that fits the question | Kelly Kigan">
+<meta name="twitter:description" content="Stata, R, Excel or SPSS? The tool matters less than the question. A simple way to match question type to method in development research.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23064e3b'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%2350c878' font-family='Georgia,serif' font-weight='700'%3EKK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "The best statistical tool is the one that fits the question", "description": "Stata, R, Excel or SPSS? The tool matters less than the question. A simple way to match question type to method in development research.", "datePublished": "2026-08-31", "dateModified": "2026-08-31", "inLanguage": "en", "mainEntityOfPage": "https://kellykigan.github.io/blog/best-statistical-tool-fits-the-question.html", "url": "https://kellykigan.github.io/blog/best-statistical-tool-fits-the-question.html", "author": {"@type": "Person", "name": "Kelly Kigan", "url": "https://kellykigan.github.io/"}, "publisher": {"@type": "Person", "name": "Kelly Kigan", "url": "https://kellykigan.github.io/"}, "wordCount": 641}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://kellykigan.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://kellykigan.github.io/#blog"}, {"@type": "ListItem", "position": 3, "name": "The best statistical tool is the one that fits the question", "item": "https://kellykigan.github.io/blog/best-statistical-tool-fits-the-question.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top">
+  <a class="brand" href="../index.html">Kelly Kigan</a>
+  <nav aria-label="Site"><a href="../index.html#about">About</a><a href="../index.html#portfolio">Portfolio</a><a href="../index.html#blog">Blog</a><a href="../index.html#contact">Contact</a></nav>
+</header>
+<main id="article">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#blog">Blog</a> / <span>The best statistical tool is the one that fits the question</span></nav>
+<article>
+<header>
+<h1>The best statistical tool is the one that fits the question</h1>
+<p class="meta"><time datetime="2026-08-31">31 August 2026</time> | 3 min read | By Kelly Kigan</p>
+</header>
+<p>People often ask which statistical software to learn first. It is a fair question, but it comes second. The first question is what you are trying to find out.</p>
+<p>Miguel Hernán, John Hsu and Brian Healy organise the scientific work of data analysis into three tasks: description, prediction and counterfactual prediction, which includes causal inference (<a href="https://doi.org/10.1080/09332480.2019.1579578" rel="noopener">Hernán et al., 2019</a>). Each task needs different data, different assumptions and different methods. Matching them is the skill.</p>
+<h2>Description: what is happening?</h2>
+<p>Description summarises features of the world. In development work, that means questions such as how many children aged 6 to 14 are out of school in a county, or what share of households report no toilet.</p>
+<p>The methods are tabulations, weighted means, distributions and maps. Excel can handle small datasets. Stata, R, SPSS and Python handle survey weights and larger files with less risk. Description sounds simple, but it depends on clean data and clear definitions (<a href="your-dataset-has-a-story.html">start with the dataset</a>).</p>
+<h2>Prediction: who is likely to?</h2>
+<p>Prediction maps inputs to outputs. Which households are most likely to drop out of school? Which clinics are most likely to run out of stock?</p>
+<p>Regression and classification models fit here, judged by how well they predict. A good prediction model makes no claim about why. A variable can predict dropout without causing it, and removing that variable will not change outcomes.</p>
+<h2>Cause and effect: what if we had done something different?</h2>
+<p>Counterfactual questions ask what would have happened under a different policy. Did the cash transfer raise attendance? Did the training programme raise incomes?</p>
+<p>These questions need a design before they need software. Randomised assignment or a credible comparison group, such as difference-in-differences or regression discontinuity, supplies the missing counterfactual. <a href="https://openknowledge.worldbank.org/handle/10986/25030" rel="noopener">Impact Evaluation in Practice</a> explains these methods for policymakers and practitioners. A regression on observational data can describe an association, but a coefficient from it is not automatically a causal effect (<a href="correlation-is-easy-explaining-why-is-hard.html">the difference matters</a>).</p>
+<h2>Why and how: what explains it?</h2>
+<p>Numbers show that something changed. They rarely show why. Interviews, focus group discussions and observation answer that part.</p>
+<p>Michael Bamberger, Vijayendra Rao and Michael Woolcock argue that qualitative methods can address some limits of randomised trials and quantitative evaluation. They also help separate design failures from implementation failures (<a href="https://openknowledge.worldbank.org/handle/10986/3732" rel="noopener">Bamberger, Rao and Woolcock, 2010</a>). A programme that did not work might have been a bad idea, or a good idea badly delivered. Only the second kind of failure is fixable without starting over.</p>
+<h2>One programme, four questions</h2>
+<p>Take a school feeding programme. A descriptive question asks how many children receive meals each day. A predictive question asks which schools are most likely to miss deliveries. A causal question asks whether meals raised attendance compared with similar schools without them. An explanatory question asks why some parents still keep children home. Four questions need four methods. One tool applied to all four would answer at most one of them well.</p>
+<h2>A four-step check before you choose a tool</h2>
+<ul><li><strong>Write the question in one sentence.</strong> If you cannot, the analysis will wander.</li><li><strong>Label its type.</strong> Is it description, prediction, cause and effect, or explanation?</li><li><strong>List the data and design it needs.</strong> A causal question with no comparison group cannot be answered, whatever the software.</li><li><strong>Use the simplest method that answers the question, and state its limits.</strong> My <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">gender development project</a> says plainly that the data are observational, so its results are associations.</li></ul>
+<h2>Where software choice enters</h2>
+<p>After the question is set, software becomes a practical choice about cost, team skills and reproducibility. I compare two common options in <a href="stata-vs-excel.html">Stata vs Excel</a>. R and Python are free and script-based (<a href="https://r4ds.hadley.nz/" rel="noopener">R for Data Science</a>). SPSS suits many survey workflows. Any of them can answer a well-posed question, and none of them can rescue a badly posed one.</p>
+<p>The best statistical tool is the one that fits the question.</p>
+<section class="sources" aria-labelledby="src">
+<h2 id="src">Sources</h2>
+<ol><li>Hernán, M. A., Hsu, J., and Healy, B. (2019). <a href="https://doi.org/10.1080/09332480.2019.1579578" rel="noopener">A second chance to get causal inference right: a classification of data science tasks</a>. CHANCE, 32(1), 42-49.</li><li>Gertler, P. J., Martinez, S., Premand, P., Rawlings, L. B., and Vermeersch, C. M. J. (2016). <a href="https://openknowledge.worldbank.org/handle/10986/25030" rel="noopener">Impact evaluation in practice</a>, second edition. World Bank.</li><li>Bamberger, M., Rao, V., and Woolcock, M. (2010). <a href="https://openknowledge.worldbank.org/handle/10986/3732" rel="noopener">Using mixed methods in monitoring and evaluation: experiences from international development</a>. World Bank Policy Research Working Paper 5245.</li><li>Wickham, H., Çetinkaya-Rundel, M., and Grolemund, G. <a href="https://r4ds.hadley.nz/" rel="noopener">R for data science</a>, second edition.</li><li>Kigan, K. <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">Gender development across countries, 1990 to 2021</a>. GitHub repository.</li></ol>
+</section>
+<aside class="author">
+<p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p>
+<a class="btn" href="../index.html#contact">Contact Kelly</a>
+</aside>
+</article>
+<section class="more" aria-labelledby="more">
+<h2 id="more">More articles</h2>
+<ul><li><a href="stata-vs-excel.html">Stata vs Excel: which one should you use?</a></li><li><a href="correlation-is-easy-explaining-why-is-hard.html">Correlation is easy. Explaining why is hard.</a></li><li><a href="what-learning-r-taught-me.html">What learning R taught me about quantitative research</a></li></ul>
+</section>
+</main>
+<footer>&copy; 2026 Kelly Kigan | <a href="../index.html">Home</a> | <a href="../index.html#blog">All articles</a> | <a href="https://github.com/kellykigan" rel="noopener">GitHub</a></footer>
+</body>
+</html>

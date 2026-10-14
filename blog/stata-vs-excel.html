@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#064e3b">
+<title>Stata vs Excel: which one should you use? | Kelly Kigan</title>
+<meta name="description" content="Excel or Stata for development data? What each does well, where spreadsheets fail without warning, and how to use both without losing reproducibility.">
+<meta name="author" content="Kelly Kigan">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://kellykigan.github.io/blog/stata-vs-excel.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stata vs Excel: which one should you use? | Kelly Kigan">
+<meta property="og:description" content="Excel or Stata for development data? What each does well, where spreadsheets fail without warning, and how to use both without losing reproducibility.">
+<meta property="og:url" content="https://kellykigan.github.io/blog/stata-vs-excel.html">
+<meta property="og:site_name" content="Kelly Kigan">
+<meta property="article:published_time" content="2026-07-20">
+<meta property="article:author" content="Kelly Kigan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stata vs Excel: which one should you use? | Kelly Kigan">
+<meta name="twitter:description" content="Excel or Stata for development data? What each does well, where spreadsheets fail without warning, and how to use both without losing reproducibility.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23064e3b'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%2350c878' font-family='Georgia,serif' font-weight='700'%3EKK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Stata vs Excel: which one should you use?", "description": "Excel or Stata for development data? What each does well, where spreadsheets fail without warning, and how to use both without losing reproducibility.", "datePublished": "2026-07-20", "dateModified": "2026-07-20", "inLanguage": "en", "mainEntityOfPage": "https://kellykigan.github.io/blog/stata-vs-excel.html", "url": "https://kellykigan.github.io/blog/stata-vs-excel.html", "author": {"@type": "Person", "name": "Kelly Kigan", "url": "https://kellykigan.github.io/"}, "publisher": {"@type": "Person", "name": "Kelly Kigan", "url": "https://kellykigan.github.io/"}, "wordCount": 640}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://kellykigan.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://kellykigan.github.io/#blog"}, {"@type": "ListItem", "position": 3, "name": "Stata vs Excel: which one should you use?", "item": "https://kellykigan.github.io/blog/stata-vs-excel.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top">
+  <a class="brand" href="../index.html">Kelly Kigan</a>
+  <nav aria-label="Site"><a href="../index.html#about">About</a><a href="../index.html#portfolio">Portfolio</a><a href="../index.html#blog">Blog</a><a href="../index.html#contact">Contact</a></nav>
+</header>
+<main id="article">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#blog">Blog</a> / <span>Stata vs Excel: which one should you use?</span></nav>
+<article>
+<header>
+<h1>Stata vs Excel: which one should you use?</h1>
+<p class="meta"><time datetime="2026-07-20">20 July 2026</time> | 3 min read | By Kelly Kigan</p>
+</header>
+<p>If you work with development data, you have probably used Excel. As your analysis grows more complex, you may start to wonder whether you need a tool like Stata.</p>
+<p>The honest answer is that you probably need both, for different jobs.</p>
+<h2>What Excel does well</h2>
+<ul><li>Entering and organising data</li><li>Simple calculations</li><li>Quick tables and charts</li><li>Managing smaller datasets</li></ul>
+<p>A single Excel worksheet holds up to 1,048,576 rows by 16,384 columns (<a href="https://support.microsoft.com/en-us/office/1672b34d-7043-467e-8e27-269d656771c3" rel="noopener">Microsoft</a>), so size alone is rarely the first problem. The problems start elsewhere.</p>
+<h2>Where spreadsheets fail without warning</h2>
+<p>Excel changes data silently. With default settings, it converts some gene names to dates and floating-point numbers. A scan of leading genomics journals found erroneous gene name conversions in 19.6 percent of papers with supplementary Excel gene lists in the selected journals (<a href="https://doi.org/10.1186/s13059-016-1044-7" rel="noopener">Ziemann, Eren and El-Osta, 2016</a>). Nobody set out to introduce those errors. Default behaviour did it.</p>
+<p>Spreadsheets also keep no record of what you did. The Reinhart and Rogoff growth study is the best-known example. A coding error in the original spreadsheet left five countries out of an average. Once that error and others were corrected, average growth for high-debt countries moved from -0.1 percent to 2.2 percent (<a href="https://doi.org/10.1093/cje/bet075" rel="noopener">Herndon, Ash and Pollin, 2013</a>). A formula range ended a few rows early, and nothing in the file showed it.</p>
+<h2>What Stata is designed for</h2>
+<ul><li>Statistical analysis</li><li>Working with larger datasets</li><li>Cleaning and transforming data</li><li>Regression and other statistical tests</li><li>Reproducible research using do-files</li></ul>
+<p>A do-file is a text file of commands. It reads the raw data, cleans it, runs the analysis and produces the tables. Anyone can rerun it and get the same numbers. Stata's own documentation describes sequencing commands to read and clean data, test, estimate and report as the heart of reproducible research (<a href="https://www.stata.com/why-use-stata/" rel="noopener">Stata</a>). That is a vendor's claim, but the DIME Analytics handbook, written by World Bank researchers, builds its workflow around the same idea and includes a master do-file template (<a href="https://worldbank.github.io/dime-data-handbook/" rel="noopener">DIME Analytics</a>).</p>
+<p>My own <a href="https://github.com/kellykigan/life-expectancy-development-analysis-stata" rel="noopener">life expectancy</a> and <a href="https://github.com/kellykigan/african-farm-households-stata" rel="noopener">farm household</a> projects follow that pattern in Stata. Each runs from raw data to results from a script.</p>
+<h2>Use both, with rules</h2>
+<p>That does not mean you must choose one. Excel is useful for managing and exploring data. Stata becomes especially useful when you need to analyse that data systematically and document your work. A workable split looks like this:</p>
+<ul><li><strong>Keep the raw file untouched.</strong> Save a read-only copy before anything else.</li><li><strong>Use Excel to look and to enter.</strong> Check the data, build quick tables and enter small datasets.</li><li><strong>Export to CSV and clean in a do-file.</strong> Every change then leaves a trace.</li><li><strong>Test reproducibility.</strong> A colleague should be able to rerun your do-file on the raw data and get your numbers.</li></ul>
+<h2>A quick decision guide</h2>
+<ul><li>You are entering data from a paper form or tallying a few hundred records: Excel.</li><li>You need a quick chart for a meeting: Excel.</li><li>You are merging survey rounds, constructing indicators or running regressions: Stata, R or Python.</li><li>Someone else must be able to verify your numbers: a script, in whichever language you use.</li></ul>
+<p>The last line settles most arguments. If the analysis feeds a report that a donor or ministry will rely on, it needs a record of how every number was produced.</p>
+<h2>A note on cost</h2>
+<p>Stata is commercial software. R and Python are free and do the same work with code (<a href="https://r4ds.hadley.nz/" rel="noopener">R for Data Science</a> is a good starting point). The principle is the same in all three: write down every step in code, so that the analysis can be checked.</p>
+<p>Whichever tool you pick, pick it for the question you are answering. The tool matters less than the habit of keeping the work traceable (<a href="best-statistical-tool-fits-the-question.html">see how to match the method to the question</a>).</p>
+<section class="sources" aria-labelledby="src">
+<h2 id="src">Sources</h2>
+<ol><li>Microsoft. <a href="https://support.microsoft.com/en-us/office/1672b34d-7043-467e-8e27-269d656771c3" rel="noopener">Excel specifications and limits</a>.</li><li>Ziemann, M., Eren, Y., and El-Osta, A. (2016). <a href="https://doi.org/10.1186/s13059-016-1044-7" rel="noopener">Gene name errors are widespread in the scientific literature</a>. Genome Biology, 17, 177.</li><li>Herndon, T., Ash, M., and Pollin, R. (2013). <a href="https://doi.org/10.1093/cje/bet075" rel="noopener">Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff</a>. Cambridge Journal of Economics.</li><li>StataCorp. <a href="https://www.stata.com/why-use-stata/" rel="noopener">Why use Stata?</a></li><li>Bjärkefur, K., Cardoso de Andrade, L., Daniels, B., and Jones, M. R. (2021). <a href="https://worldbank.github.io/dime-data-handbook/" rel="noopener">Development research in practice: the DIME Analytics data handbook</a>. World Bank.</li><li>Wickham, H., Çetinkaya-Rundel, M., and Grolemund, G. <a href="https://r4ds.hadley.nz/" rel="noopener">R for data science</a>, second edition.</li><li>Kigan, K. <a href="https://github.com/kellykigan/life-expectancy-development-analysis-stata" rel="noopener">Life expectancy and development indicators</a> and <a href="https://github.com/kellykigan/african-farm-households-stata" rel="noopener">African farm households</a>. GitHub repositories.</li></ol>
+</section>
+<aside class="author">
+<p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p>
+<a class="btn" href="../index.html#contact">Contact Kelly</a>
+</aside>
+</article>
+<section class="more" aria-labelledby="more">
+<h2 id="more">More articles</h2>
+<ul><li><a href="your-dataset-has-a-story.html">Your dataset has a story before you analyse it</a></li><li><a href="best-statistical-tool-fits-the-question.html">The best statistical tool is the one that fits the question</a></li><li><a href="what-learning-r-taught-me.html">What learning R taught me about quantitative research</a></li></ul>
+</section>
+</main>
+<footer>&copy; 2026 Kelly Kigan | <a href="../index.html">Home</a> | <a href="../index.html#blog">All articles</a> | <a href="https://github.com/kellykigan" rel="noopener">GitHub</a></footer>
+</body>
+</html>

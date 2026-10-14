@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#064e3b">
+<meta name="color-scheme" content="light">
+<title>Kelly Kigan | Development Research, Data Analysis, Evidence and Policy</title>
+<meta name="description" content="Development researcher in Kenya. Quantitative and qualitative research, data analysis, evaluation, climate finance and evidence synthesis.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kelly Kigan | Development Research, Data Analysis, Evidence and Policy">
+<meta property="og:description" content="Development researcher in Kenya. Quantitative and qualitative research, data analysis, evaluation, climate finance and evidence synthesis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23064e3b'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%2350c878' font-family='Georgia,serif' font-weight='700'%3EKK%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://kellykigan.github.io/">
+<meta property="og:url" content="https://kellykigan.github.io/">
+<meta property="og:site_name" content="Kelly Kigan">
+<meta property="og:image" content="https://kellykigan.github.io/photo.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Kelly Kigan", "url": "https://kellykigan.github.io/", "jobTitle": "Development research and advisory professional", "address": {"@type": "PostalAddress", "addressCountry": "KE"}, "sameAs": ["https://www.linkedin.com/in/kellykigan/", "https://github.com/kellykigan"], "knowsAbout": ["Development research", "Impact evaluation", "Data analysis", "Evidence synthesis", "Policy research"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--white:#fff;--paper:#f5f7f6;--tint:#ecfdf5;--mint:#d1fae5;--emerald:#047857;--emerald2:#059669;--bright:#50c878;--deep:#064e3b;--ink:#10231b;--muted:#506259;--line:#d3e6dc;--head:"Fraunces",Georgia,serif;--body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--pad:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font:16px/1.6 var(--body);color:var(--ink);background:var(--paper);overflow-wrap:break-word;-webkit-tap-highlight-color:rgba(4,120,87,.18)}
+img{display:block;max-width:100%}
+a{color:var(--emerald)}
+a,button{touch-action:manipulation}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--emerald2);outline-offset:2px;border-radius:4px}
+#content:focus{outline:none}
+.skip{position:absolute;left:12px;top:-64px;z-index:30;background:var(--white);color:var(--deep);padding:12px 18px;border-radius:10px;font-weight:600}
+.skip:focus{top:12px}
+
+/* header and profile (mobile first) */
+.side{background:var(--deep);color:var(--white);padding:calc(22px + env(safe-area-inset-top,0px)) max(var(--pad),env(safe-area-inset-right,0px)) 22px max(var(--pad),env(safe-area-inset-left,0px));border-radius:0 0 28px 28px}
+.id{display:flex;align-items:center;gap:16px}
+.photo{position:relative;flex:none;width:84px;height:84px;border-radius:50%;border:3px solid var(--bright);background:var(--tint);overflow:hidden;display:grid;place-items:center}
+.photo span{font:700 30px var(--head);color:var(--deep)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.side h1{font:700 25px/1.15 var(--head)}
+.tag{font-size:14px;line-height:1.45;color:#a7f3d0;margin-top:6px}
+.info{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
+.info a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:980px;background:rgba(255,255,255,.14);color:var(--white);text-decoration:none;font-weight:600;font-size:15px}
+.info small{font:inherit}
+.info .v{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:980px;border:2px solid var(--emerald);background:var(--emerald);color:var(--white);font:600 15px var(--body);text-decoration:none;text-align:center;cursor:pointer}
+.btn.alt{background:transparent;color:var(--emerald)}
+
+/* main and tabs */
+.main{background:var(--white);min-width:0}
+.wrap>*{min-width:0}
+.tabs{position:sticky;top:0;z-index:10;display:flex;gap:6px;padding:calc(8px + env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-right,0px)) 8px max(12px,env(safe-area-inset-left,0px));overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;scrollbar-width:none;background:rgba(255,255,255,.93);-webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--line)}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;scroll-snap-align:center;min-height:44px;padding:0 18px;border:0;border-radius:980px;background:transparent;color:var(--emerald);font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--emerald);color:var(--white)}
+.panel{display:none;padding:28px max(var(--pad),env(safe-area-inset-right,0px)) 36px max(var(--pad),env(safe-area-inset-left,0px))}
+.panel.on{display:block}
+
+/* type */
+h2{font:700 clamp(30px,8.4vw,36px)/1.12 var(--head);color:var(--deep);letter-spacing:-.02em;margin-bottom:18px}
+h3{font:700 clamp(19px,5vw,23px)/1.3 var(--head);color:var(--deep);margin:30px 0 12px}
+.panel p{max-width:68ch;margin-bottom:14px}
+.lead{font-size:18px;line-height:1.55}
+
+/* what I do: accordion on phones, tiles on larger screens */
+.wid{display:grid;gap:10px}
+.wid button{position:relative;width:100%;min-height:58px;text-align:left;padding:14px 52px 14px 18px;border-radius:18px;border:2px solid transparent;background:var(--paper);color:var(--deep);font-size:16px;font-weight:600;line-height:1.35;cursor:pointer}
+.wid button::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:400;line-height:1}
+.wid button[aria-expanded="true"]{background:var(--emerald);color:var(--white)}
+.wid button[aria-expanded="true"]::after{content:"\2212"}
+.wid button{scroll-margin-top:72px}
+.def{display:none;margin-top:8px;background:var(--paper);border-radius:18px;padding:20px}
+.def.on{display:block}
+.def p{font-size:15.5px;margin-bottom:10px}
+.def p:last-child{margin-bottom:0}
+.def .chips{margin:6px 0 12px}
+.def .pts{margin-bottom:14px}
+
+/* resume */
+.tl{list-style:none;border-left:2px solid var(--mint);margin-left:6px}
+.tl li{position:relative;padding:0 0 20px 22px}
+.tl li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--emerald)}
+.tl b{display:block;line-height:1.4}
+.tl em{display:block;font-style:normal;color:var(--muted);font-size:14.5px}
+.job{border-left:3px solid var(--mint);padding:0 0 22px 16px;margin:0 0 4px 2px}
+.job .jh{display:flex;flex-direction:column;gap:2px}
+.job .jh b{font-size:17px;line-height:1.35}
+.job .jh span{color:var(--emerald);font-size:14.5px;font-weight:600}
+.job em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin:2px 0 8px}
+.pts{margin:0 0 0 20px;font-size:15.5px;max-width:72ch}
+.pts li{margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 14px}
+.chips span{background:var(--mint);color:var(--deep);border-radius:8px;padding:6px 12px;font-size:14px;font-weight:500;line-height:1.35}
+
+/* portfolio and certifications */
+.cta{display:flex;flex-direction:column;gap:10px;margin:0 0 24px}
+.cta .btn{width:100%}
+.projs{display:grid;gap:14px}
+.card{background:var(--paper);border-radius:22px;padding:22px 20px}
+.card h3{margin:0 0 12px;font-size:clamp(20px,5.4vw,26px);line-height:1.25}
+.card p{font-size:15.5px}
+.kicker{font-size:14px;font-weight:600;color:var(--emerald);margin:0 0 8px}
+.facts{border-top:1px solid var(--line);margin:6px 0 18px;font-size:15px}
+.facts dt{font-weight:600;color:var(--emerald);padding-top:10px}
+.facts dd{padding:2px 0 10px;border-bottom:1px solid var(--line)}
+.card .btn{width:100%}
+.card.more{background:var(--deep);color:var(--white)}
+.card.more h3{color:var(--white)}
+.card.more .kicker{color:var(--bright)}
+.card.more .btn{background:var(--bright);border-color:var(--bright);color:var(--deep)}
+.certs{display:grid;gap:12px;margin-bottom:8px}
+.cert{background:var(--paper);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:4px}
+.cert b{font:700 18px/1.3 var(--head);color:var(--deep)}
+.cert span{font-size:14.5px;color:var(--muted)}
+.cert .btn{align-self:flex-start;margin-top:12px;min-height:44px;padding:0 20px;font-size:14px}
+
+/* blog and contact */
+.empty{border:2px dashed var(--mint);border-radius:18px;padding:28px 20px;text-align:center;color:var(--muted)}
+.post{border-bottom:1px solid var(--line);padding:18px 0}
+.post time{font-size:13px;color:var(--muted)}
+.post h3{margin:2px 0 6px}
+.cgrid{display:grid;gap:12px;margin-top:8px}
+.cbtn{display:block;min-height:76px;text-decoration:none;color:var(--white);background:var(--emerald);border-radius:20px;padding:18px 20px}
+.cbtn b{display:block;font:700 18px var(--head)}
+.cbtn span{font-size:14.5px;color:#d1fae5;overflow-wrap:anywhere}
+
+footer{display:flex;flex-direction:column;gap:6px;padding:18px max(var(--pad),env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(var(--pad),env(safe-area-inset-left,0px));border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+footer nav{display:flex;flex-wrap:wrap;gap:0 14px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);text-decoration:none}
+
+@media (hover:hover){
+  .btn:hover{background:var(--deep);border-color:var(--deep);color:var(--white)}
+  .btn.alt:hover{background:var(--tint);color:var(--deep);border-color:var(--emerald)}
+  .tabs button:hover{background:var(--mint)}
+  .tabs button[aria-selected="true"]:hover{background:var(--emerald)}
+  .wid button:hover{background:var(--mint)}
+  .wid button[aria-expanded="true"]:hover{background:var(--emerald)}
+  .info a:hover{background:rgba(255,255,255,.24)}
+  .cbtn:hover{background:var(--deep)}
+  .card.more .btn:hover{background:var(--white);border-color:var(--white);color:var(--deep)}
+  footer a:hover{color:var(--emerald);text-decoration:underline}
+}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  .btn,.cbtn,.tabs button,.wid button,.info a{transition:background-color .15s,color .15s,border-color .15s}
+}
+
+/* tablets */
+@media (min-width:640px){
+  :root{--pad:36px}
+  .wrap{max-width:860px;margin:0 auto;padding:20px;display:grid;gap:16px}
+  .side{border-radius:28px;padding:28px 36px}
+  .photo{width:104px;height:104px}
+  .photo span{font-size:36px}
+  .side h1{font-size:30px}
+  .tag{font-size:15px}
+  .main{border-radius:28px;overflow:clip;box-shadow:0 1px 2px rgba(6,78,59,.06)}
+  .tabs{background:rgba(236,253,245,.9)}
+  .tabs button:first-child{margin-left:auto}
+  .tabs button:last-child{margin-right:auto}
+  .panel{padding:40px 36px}
+  h2{font-size:40px}
+  .job .jh{flex-direction:row;justify-content:space-between;flex-wrap:wrap;gap:4px 12px}
+  .cta{flex-direction:row;flex-wrap:wrap}
+  .cta .btn,.card .btn{width:auto}
+  .card{padding:28px}
+  .facts{display:grid;grid-template-columns:110px 1fr}
+  .facts dt,.facts dd{padding:10px 0;border-bottom:1px solid var(--line)}
+  .certs{grid-template-columns:1fr 1fr}
+  .wid{grid-template-columns:1fr 1fr}
+  .wi{display:contents}
+  .wid button{min-height:76px;padding-right:18px}
+  .wid button::after{display:none}
+  .def{grid-column:1/-1;grid-row:4;margin-top:4px;padding:24px 26px}
+  .cgrid{grid-template-columns:repeat(3,1fr)}
+  footer{flex-direction:row;justify-content:space-between;align-items:center;padding:12px 36px}
+}
+
+/* laptops */
+@media (min-width:900px){
+  .wrap{max-width:1180px;padding:24px;grid-template-columns:310px 1fr;gap:24px;align-items:start}
+  .side{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;padding:34px 26px 28px}
+  .id{display:block;text-align:center}
+  .photo{width:148px;height:148px;margin:0 auto 20px;border-width:4px;box-shadow:0 0 0 6px var(--deep),0 0 0 8px rgba(80,200,120,.35)}
+  .photo span{font-size:48px}
+  .side h1{font-size:27px}
+  .tag{font-size:14px}
+  .info{display:block;margin-top:24px;border-top:1px solid rgba(255,255,255,.18)}
+  .info li{border-bottom:1px solid rgba(255,255,255,.12)}
+  .info a{display:block;min-height:0;padding:12px 0;border-radius:0;background:none;font-weight:400;text-align:left;word-break:break-all}
+  .info small{display:block;font-size:12px;font-weight:600;color:var(--bright)}
+  .info .v{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;font-size:15px}
+  .panel{padding:48px 44px}
+  h2{font-size:46px}
+  .lead{font-size:20px}
+  footer{padding:14px 44px}
+}
+@media (min-width:1100px){.wid{grid-template-columns:repeat(3,1fr)}.def{grid-row:3}}
+@media (min-width:1500px){.wrap{max-width:1280px;grid-template-columns:340px 1fr}}
+
+[hidden]{display:none!important}
+.bgrid{display:grid;gap:12px;margin-top:8px}
+.bbox{font:inherit;text-align:left;width:100%;cursor:pointer;display:flex;flex-direction:column;gap:6px;background:var(--paper);border:2px solid transparent;border-radius:18px;padding:18px;text-decoration:none;color:var(--ink)}
+.bbox .bm{font-size:13.5px;color:var(--muted)}
+.bbox .bt{font:700 19px/1.3 var(--head);color:var(--deep)}
+.bbox .bd{font-size:15px;line-height:1.5}
+.bbox .go{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:980px;background:var(--emerald);color:#fff;font-weight:600;font-size:14.5px}
+.bbox:focus-visible{border-color:var(--emerald)}
+@media (hover:hover){.bbox:hover{border-color:var(--emerald)}.bbox:hover .go{background:var(--deep)}}
+@media (min-width:640px){.bgrid{grid-auto-flow:column;grid-template-rows:repeat(5,auto);grid-template-columns:1fr 1fr}}
+.rbar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.reader .rt{font:700 clamp(26px,6.4vw,36px)/1.15 var(--head);color:var(--deep);letter-spacing:-.02em;margin:0 0 10px}
+.reader .rt:focus{outline:none}
+.reader .meta{font-size:14.5px;color:var(--muted);margin-bottom:24px}
+.reader h3{margin:30px 0 10px}
+.reader ul,.reader ol{margin:0 0 16px 22px}
+.reader li{margin-bottom:8px}
+.reader code{font:.92em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--paper);padding:1px 5px;border-radius:4px}
+.reader .sources{margin-top:36px;border-top:1px solid var(--line);font-size:15px}
+.reader .sources h3{font-size:19px;margin-top:18px}
+.reader .author{background:var(--tint);border-radius:18px;padding:20px;margin-top:30px;font-size:15.5px}
+.reader .author p{margin-bottom:12px}
+.reader a:not(.btn){text-underline-offset:3px}
+.ilink{background:none;border:0;padding:0;font:inherit;color:var(--emerald);text-decoration:underline;text-underline-offset:3px;cursor:pointer;text-align:inherit}
+.ilink:hover{color:var(--deep)}
+.reader p,.reader li{font-size:17px;line-height:1.75}
+.reader .sources p,.reader .sources li,.reader .author p{font-size:15.5px;line-height:1.6}
+.reader .rd[hidden]{display:none}
+.pn{display:grid;gap:12px;margin:34px 0 20px}
+@media (min-width:640px){.pn{grid-template-columns:1fr 1fr}}
+.pn .bbox{min-height:44px}
+.pn .bt{font-size:17px}
+</style>
+<noscript><style>.panel{display:block!important}.tabs{display:none}.def{display:block!important}.wid button::after{display:none}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#content" id="skip">Skip to content</a>
+<div class="wrap">
+
+<header class="side">
+  <div class="id">
+    <div class="photo"><span aria-hidden="true">KK</span><img src="photo.jpg" alt="Portrait of Kelly Kigan" width="148" height="148" decoding="async" fetchpriority="high" onerror="this.remove()"></div>
+    <div>
+      <h1>Kelly Kigan</h1>
+      <p class="tag">Development Research &amp; Advisory | Data Analysis | Evidence &amp; Policy</p>
+    </div>
+  </div>
+  <ul class="info">
+    <li><a href="mailto:kellykigan.kk@gmail.com"><small>Email</small> <span class="v">kellykigan.kk@gmail.com</span></a></li>
+    <li><a href="https://www.linkedin.com/in/kellykigan/"><small>LinkedIn</small> <span class="v">linkedin.com/in/kellykigan</span></a></li>
+    <li><a href="https://github.com/kellykigan"><small>GitHub</small> <span class="v">github.com/kellykigan</span></a></li>
+  </ul>
+</header>
+
+<div class="main">
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" id="t-about" data-tab="about" aria-selected="true">About</button>
+    <button role="tab" id="t-resume" data-tab="resume" aria-selected="false">Resume</button>
+    <button role="tab" id="t-portfolio" data-tab="portfolio" aria-selected="false">Portfolio</button>
+    <button role="tab" id="t-certifications" data-tab="certifications" aria-selected="false">Certifications</button>
+    <button role="tab" id="t-blog" data-tab="blog" aria-selected="false">Blog</button>
+    <button role="tab" id="t-contact" data-tab="contact" aria-selected="false">Contact</button>
+  </nav>
+
+  <main id="content" tabindex="-1">
+
+  <section class="panel on" id="about" role="tabpanel" aria-labelledby="t-about">
+    <h2>About me</h2>
+    <p class="lead">I am a development research and advisory professional based in Kenya. I use quantitative and qualitative evidence to answer questions in health, social policy, gender, education, climate and frontier technologies.</p>
+    <p>I hold a Master of Development Studies from the University of Nairobi. Since 2021 I have worked on four World Bank and Government of Kenya evaluation studies, researched climate resilience programmes with the United Nations Volunteers Programme, and written policy briefs on digital governance in East Africa.</p>
+    <p>I am skilled in R, Stata, SPSS, Excel and Python, with a focus on cleaning and validating survey data and keeping every analysis reproducible. I am also comfortable and active in using AI tools for research and data analysis, including literature review, coding support, synthesis and reporting, with human review of every output.</p>
+
+    <h3>What I do</h3>
+    <div class="wid" role="group" aria-label="What I do">
+      <div class="wi">
+        <button type="button" id="b1" data-def="d1" aria-controls="d1" aria-expanded="true">Research and fieldwork</button>
+        <div class="def on" id="d1" role="region" aria-labelledby="b1">
+      <p>I design and run research from the first question to the final report: study design, survey instruments in SurveyCTO, KoboToolbox and ODK, and data collection through surveys, focus group discussions and key informant interviews. I also write systematic literature reviews of academic and grey sources.</p>
+      <p>This work has supported four World Bank and Government of Kenya studies on health development, social policy and gender parity in higher education.</p>
+        </div>
+      </div>
+      <div class="wi">
+        <button type="button" id="b2" data-def="d2" aria-controls="d2" aria-expanded="false">Monitoring and evaluation</button>
+        <div class="def" id="d2" role="region" aria-labelledby="b2">
+      <p>I design evaluation and MEAL frameworks, including theories of change, that track outcomes against milestones and donor priorities. For impact and programme evaluations, I prepare the data, run the analysis and write up the findings.</p>
+      <p>One framework I designed produced a 90 percent mission-alignment rate that supported continued institutional funding.</p>
+        </div>
+      </div>
+      <div class="wi">
+        <button type="button" id="b3" data-def="d3" aria-controls="d3" aria-expanded="false">Data analysis and reproducible workflows</button>
+        <div class="def" id="d3" role="region" aria-labelledby="b3">
+      <p>I turn raw survey and country-level data into analysis that others can check and repeat. I start with data quality: structure, identifiers, duplicates, missing values and implausible ranges. Then I run descriptive statistics, group comparisons, correlation and regression in R, Stata, SPSS and Python, produce charts, and record each step in code.</p>
+      <p>The Portfolio tab shows this process on UNESCO, UNDP and household survey data.</p>
+        </div>
+      </div>
+      <div class="wi">
+        <button type="button" id="b4" data-def="d4" aria-controls="d4" aria-expanded="false">Climate finance and ESG research</button>
+        <div class="def" id="d4" role="region" aria-labelledby="b4">
+      <p>I help organisations present environmental, social and governance performance in a form donors and impact investors can assess. At Footprints Intelligence KE I design research methods, structure client data against the GRI and TCFD frameworks, and turn stakeholder consultations into recommendations. This work has supported five startups in securing climate finance.</p>
+      <p>Earlier IFC Performance Standard 7 consultation work for United Nations Environment Programme initiatives added experience in community engagement and safeguards research.</p>
+        </div>
+      </div>
+      <div class="wi">
+        <button type="button" id="b5" data-def="d5" aria-controls="d5" aria-expanded="false">Policy research and evidence synthesis</button>
+        <div class="def" id="d5" role="region" aria-labelledby="b5">
+      <p>I write for people who make decisions: policy briefs, research reports, grant proposals and stakeholder presentations that say what the findings mean, how confident we can be and what should happen next.</p>
+      <p>I have contributed to more than 20 technical papers and policy briefs on digital governance and economic policy in East Africa, and carried out political economy analysis of donor-funded climate resilience programmes.</p>
+        </div>
+      </div>
+      <div class="wi">
+        <button type="button" id="b6" data-def="d6" aria-controls="d6" aria-expanded="false">AI-assisted research and digital fluency</button>
+        <div class="def" id="d6" role="region" aria-labelledby="b6">
+      <p>I use AI across the research cycle and treat every output as a draft to verify. I choose the tool by task.</p>
+      <div class="chips"><span>Claude</span><span>Perplexity</span><span>Gemini</span><span>ChatGPT</span><span>Google AI Studio</span><span>Prompt Engineering</span><span>Python AI Agents</span></div>
+      <ul class="pts">
+        <li>Literature discovery and synthesis, with claims traced back to sources</li>
+        <li>Research planning and drafting of survey instruments</li>
+        <li>Prompt engineering: structured, reusable prompts for literature review, coding and drafting tasks</li>
+        <li>Coding support and debugging in R, Stata and Python</li>
+        <li>Repeatable research workflows, including Python-based agents for data preparation and synthesis</li>
+        <li>Structuring, editing and summarising reports and briefs</li>
+      </ul>
+      <p>Human judgement stays in charge. I check outputs against source documents, rerun code on the real data, and make the final calls on design, interpretation and conclusions.</p>
+      <p>My digital toolkit also covers SurveyCTO, KoboToolbox, ODK, Excel, Google Workspace and GitHub. Training includes the Google AI Professional Certificate and AI Fluency for Nonprofits (Claude Academy), plus the IBM Data Analyst and Google Data Analytics certificates, all in 2026.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="resume" role="tabpanel" aria-labelledby="t-resume">
+    <h2>Resume</h2>
+    
+
+    <h3>Summary</h3>
+    <p>Development research and advisory professional, focused on evidence-based research, social impact, and impact evaluation. Experienced in quantitative and qualitative research, data analysis, and evidence synthesis, with skills in Stata, SPSS, R, Python, and AI-enabled research and analytical workflows. Supported World Bank and Government of Kenya evaluation studies across health, social policy, frontier technologies, and governance.</p>
+
+    <h3>Skills</h3>
+    <div class="chips">
+      <span>Development research</span><span>Development advisory</span><span>Quantitative research</span><span>Qualitative research</span><span>Mixed-methods research design</span><span>Impact evaluation</span><span>MEAL framework design</span><span>Policy research</span><span>Evidence synthesis</span><span>Data cleaning and validation</span><span>Statistical analysis</span><span>Stata</span><span>R</span><span>SPSS</span><span>Excel</span><span>Python</span><span>AI Fluency</span><span>Policy brief and report writing</span><span>Stakeholder engagement</span>
+    </div>
+
+    <h3>Career highlights</h3>
+    <ul class="pts">
+      <li>Delivered research across four World Bank and Government of Kenya evaluation studies. Built survey instruments in SurveyCTO and KoboToolbox and processed data in Stata and R for health, social policy and gender parity in higher education.</li>
+      <li>Ran mixed-methods research with multi-stakeholder consultation, including IFC Performance Standard 7 community engagements for UNEP, and turned findings into reports for government and donors.</li>
+      <li>Researched frontier technologies and their governance, contributing to more than 20 technical papers and policy briefs on emerging technology regulation and digital governance in East Africa, and applying AI tools across research and data analysis.</li>
+    </ul>
+
+    <h3>Professional experience</h3>
+
+    <div class="job">
+      <div class="jh"><b>Research Consultant | Freelance</b><span>March 2025 - Present</span></div>
+      <em>Footprints Intelligence KE | Nairobi, Kenya (Remote)</em>
+      <ul class="pts">
+        <li>Conducting research operations in climate finance advisory, designing evidence-based research methodologies to assess environmental, social, and governance (ESG) performance for startups in Kenya.</li>
+        <li>Conduct quantitative and qualitative data analysis of client and stakeholder data, applying GRI and TCFD disclosure frameworks to structure findings for donor and impact investor audiences.</li>
+        <li>Produce research and advisory deliverables that translate multi-stakeholder consultation findings into evidence-based recommendations, supporting five startups in securing climate finance.</li>
+        <li>Synthesize primary and secondary data across environmental, social, and governance domains, applying bilateral climate finance frameworks to structure analysis and reporting for institutional clients.</li>
+        <li>Consult startup founders, donors, and impact investors, and use their input to shape research findings and advisory recommendations.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jh"><b>Graduate Student Researcher</b><span>February 2024 - November 2025</span></div>
+      <em>University of Nairobi, Institute for Development Studies | Nairobi, Kenya (Hybrid)</em>
+      <ul class="pts">
+        <li>Designed and coded research instruments in SurveyCTO and ODK for four World Bank and Government of Kenya evaluation studies, contributing to research design and data collection planning on health development, social policy, and gender parity in higher education.</li>
+        <li>Collected primary data through field surveys, focus group discussions, and key informant interviews, applying mixed-methods research design across four major development research and policy studies.</li>
+        <li>Cleaned, validated, and processed survey datasets in Stata and R, running statistical tests and regression analysis to support evidence-based research outputs for multi-donor and government audiences.</li>
+        <li>Conducted systematic literature reviews synthesizing academic and grey literature, building the analytical and evaluation frameworks applied across active financial inclusion and social protection studies.</li>
+        <li>Drafted research reports, grant proposals, and stakeholder presentations, translating quantitative and qualitative findings into policy-oriented, consultancy-quality deliverables for non-technical audiences.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jh"><b>Policy Analyst</b><span>March 2023 - December 2023</span></div>
+      <em>United Nations Volunteers Programme | Papua New Guinea (Remote)</em>
+      <ul class="pts">
+        <li>Conducted political economy research and evidence synthesis on donor-funded climate resilience programmes in Papua New Guinea, examining institutional power dynamics and policy implementation effectiveness for international donor audiences.</li>
+        <li>Analyzed consultation data gathered by field teams under IFC Performance Standard 7, synthesizing findings from Indigenous Peoples and Local Communities engagements into structured research reports for government and donor stakeholders.</li>
+        <li>Served as research liaison between field consultation teams and United Nations Environment Programme, translating community-level findings into programme documentation and stakeholder engagement strategy.</li>
+        <li>Produced technical analytical and policy research examining programme implementation, informing programme direction for an international climate resilience initiative.</li>
+        <li>Applied qualitative research methods, including thematic analysis of consultation records, to assess institutional effectiveness and community engagement outcomes within a donor-funded development programme.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jh"><b>Research Analyst</b><span>November 2021 - December 2022</span></div>
+      <em>NEAR Foundation | Zug, Switzerland | Nairobi, Kenya (Hybrid)</em>
+      <ul class="pts">
+        <li>Contributed research and analysis to more than 20 technical papers and policy briefs on emerging technology regulation, digital governance, and economic policy across East Africa.</li>
+        <li>Conducted desk research and literature review to inform policy research on digital financial infrastructure and governance frameworks.</li>
+        <li>Analyzed regulatory and economic policy developments across East Africa, assessing implications for digital governance and financial inclusion.</li>
+        <li>Engaged cross-sector stakeholders, including policymakers, regulators, and private sector actors, gathering qualitative input on digital governance and financial infrastructure policy.</li>
+        <li>Translated research findings into policy briefs and technical papers aimed at improving digital financial access for underserved populations.</li>
+      </ul>
+    </div>
+
+    <h3>Education</h3>
+    <ul class="tl">
+      <li><b>Master of Development Studies</b><em>University of Nairobi, Kenya | 2023 - 2025</em></li>
+      <li><b>Certificate: A Critical Engagement with Advancing the SDGs</b><em>Universiteit Leiden, The Netherlands | 2024</em></li>
+      <li><b>Bachelor's in Communications and Media Technology (with IT)</b><em>Maseno University, Kenya | 2014 - 2018</em></li>
+    </ul>
+
+    <h3>Certifications</h3>
+    <ul class="tl">
+      <li><b>IBM Data Analyst Professional Certificate</b><em>Coursera | 2026</em></li>
+      <li><b>Google Data Analytics Professional Certificate</b><em>Google, Coursera | 2026</em></li>
+      <li><b>Google AI Professional Certificate</b><em>Google, Coursera | 2026</em></li>
+      <li><b>AI Fluency for Nonprofits</b><em>Claude Academy | 2026</em></li>
+    </ul>
+  </section>
+
+  <section class="panel" id="portfolio" role="tabpanel" aria-labelledby="t-portfolio">
+    <h2>Portfolio</h2>
+    <p class="lead">Real datasets, full code and clear write-ups. Open a repository to follow each analysis step by step. New projects are added as they are finished.</p>
+    <div class="cta"><a class="btn" href="https://github.com/kellykigan?tab=repositories">Browse all repositories</a></div>
+    <div class="projs">
+      <article class="card">
+        <p class="kicker">Education indicators in Africa, 2010 to 2023</p>
+        <h3>Does public spending on primary education raise attendance?</h3>
+        <div class="chips"><span>R</span><span>UNESCO data</span><span>Regression</span></div>
+        <p>A reproducible R analysis of UNESCO data for 50+ African countries. It tracks school life expectancy and primary attendance over time, compares male and female outcomes, measures the urban-rural gap, and tests whether higher spending on primary education, as a share of GDP, goes with higher net attendance after controlling for time and location.</p>
+        <dl class="facts">
+          <dt>Data</dt><dd>UNESCO Institute for Statistics: school life expectancy by sex, education spending, net attendance by urban, rural and income group, out-of-school children, enrolment and teacher statistics.</dd>
+          <dt>Setup</dt><dd>Raw CSV files, one R script and an output folder, so the analysis reruns from scratch.</dd>
+        </dl>
+        <a class="btn" href="https://github.com/kellykigan/Education_Africa_Analysis-R-Project">View project on GitHub</a>
+      </article>
+      <article class="card">
+        <p class="kicker">Gender development across countries, 1990 to 2021</p>
+        <h3>How does gender development differ across countries, and how has it changed?</h3>
+        <div class="chips"><span>R</span><span>tidyverse</span><span>ggplot2</span><span>Regression</span></div>
+        <p>An R study of the Gender Development Index (GDI) for 195 countries. It compares GDI across human development groups and regions, tests how it relates to HDI rank, and tracks change over time. The write-up states its limit plainly: the data are observational, so results show associations, not causal effects.</p>
+        <dl class="facts">
+          <dt>Methods</dt><dd>Data quality and missing-data checks, group comparisons, correlation, linear regression, longitudinal analysis and regression diagnostics.</dd>
+          <dt>Findings</dt><dd>GDI varies widely across countries. Higher human development groups record higher GDI, it differs by region and tracks HDI rank, and it generally rose over the period.</dd>
+        </dl>
+        <a class="btn" href="https://github.com/kellykigan/gender-development-r-analysis">View project on GitHub</a>
+      </article>
+      <article class="card">
+        <p class="kicker">Life expectancy and development indicators, 2000 to 2015</p>
+        <h3>What goes with a longer life: schooling, income, mortality or development status?</h3>
+        <div class="chips"><span>Stata</span><span>Panel data</span><span>Data management</span></div>
+        <p>A Stata workflow from raw CSV to analysis-ready panel data, covering 2,938 country-year observations across 193 countries. It examines how life expectancy relates to schooling, GDP per capita, adult mortality, HIV/AIDS mortality and development status.</p>
+        <dl class="facts">
+          <dt>Methods</dt><dd>Variable labelling, duplicate and country-year uniqueness checks, range checks, missing-data patterns, box plots, scatter plots, histograms, log-transformed GDP per capita, and panel set-up with xtset, xtdescribe and xtsum.</dd>
+        </dl>
+        <a class="btn" href="https://github.com/kellykigan/life-expectancy-development-analysis-stata">View project on GitHub</a>
+      </article>
+      <article class="card">
+        <p class="kicker">African farm households: data quality audit</p>
+        <h3>Can you trust household survey data before you model it?</h3>
+        <div class="chips"><span>Stata</span><span>Survey data</span><span>Data validation</span></div>
+        <p>A Stata audit of an agricultural survey of about 9,600 households in 11 countries: Burkina Faso, Cameroon, Egypt, Ethiopia, Ghana, Kenya, Niger, Senegal, South Africa, Zambia and Zimbabwe. It checks identifiers, geography, variable types and missing data, flags implausible household sizes, and examines farm income, farm area and distance to markets.</p>
+        <dl class="facts">
+          <dt>Setup</dt><dd>One do-file with histograms and box plots, log-transformed farm income and market distances, and missing farm income by country.</dd>
+        </dl>
+        <a class="btn" href="https://github.com/kellykigan/african-farm-households-stata">View project on GitHub</a>
+      </article>
+      <article class="card more">
+        <p class="kicker">Coming next</p>
+        <h3>New analyses are added as they are finished.</h3>
+        <p>Follow the repositories on GitHub to see new work first.</p>
+        <a class="btn" href="https://github.com/kellykigan">Follow on GitHub</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="certifications" role="tabpanel" aria-labelledby="t-certifications">
+    <h2>Certifications</h2>
+    <p class="lead">Professional certificates in data analysis and AI.</p>
+    <div id="certList"></div>
+  </section>
+
+  <section class="panel" id="blog" role="tabpanel" aria-labelledby="t-blog">
+    <h2>Blog</h2>
+    <p class="lead" id="blogLead">Notes on development research, evidence and data analysis.</p>
+    <div id="blogList" class="bgrid">
+      <button type="button" class="bbox" data-post="data-vs-community-voices">
+        <span class="bm">12 October 2026 | 3 min read</span>
+        <span class="bt">When the data says one thing and the community says another</span>
+        <span class="bd">When survey numbers and community accounts disagree, both carry information. How mixed methods and consultation reconcile conflicting development evidence.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="average-hides-development-problem">
+        <span class="bm">21 September 2026 | 3 min read</span>
+        <span class="bt">The average can hide the development problem</span>
+        <span class="bd">National averages hide who is being left behind. Kenya's child stunting data shows how an 18 percent average conceals counties above 30 percent.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="best-statistical-tool-fits-the-question">
+        <span class="bm">31 August 2026 | 3 min read</span>
+        <span class="bt">The best statistical tool is the one that fits the question</span>
+        <span class="bd">Stata, R, Excel or SPSS? The tool matters less than the question. A simple way to match question type to method in development research.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="what-learning-r-taught-me">
+        <span class="bm">10 August 2026 | 3 min read</span>
+        <span class="bt">What learning R taught me about quantitative research</span>
+        <span class="bd">Notes from learning R on development data: why understanding the dataset, cleaning and the research question matter more than the test you run.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="stata-vs-excel">
+        <span class="bm">20 July 2026 | 3 min read</span>
+        <span class="bt">Stata vs Excel: which one should you use?</span>
+        <span class="bd">Excel or Stata for development data? What each does well, where spreadsheets fail without warning, and how to use both without losing reproducibility.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="your-dataset-has-a-story">
+        <span class="bm">29 June 2026 | 3 min read</span>
+        <span class="bt">Your dataset has a story before you analyse it</span>
+        <span class="bd">Before you run a regression or draw a chart, interrogate your dataset. Six checks that stop development researchers publishing precise but wrong results.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="africa-urban-infrastructure-gap">
+        <span class="bm">8 June 2026 | 3 min read</span>
+        <span class="bt">Where should Africa's urban infrastructure money go first?</span>
+        <span class="bd">African cities are growing faster than their housing, roads and water systems. What the data says about the infrastructure gap and where to invest first.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="correlation-is-easy-explaining-why-is-hard">
+        <span class="bm">18 May 2026 | 3 min read</span>
+        <span class="bt">Correlation is easy. Explaining why is hard.</span>
+        <span class="bd">Income and school attendance rise together, but why? A plain guide to correlation, confounders and explaining patterns in development research.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="programme-works-but-people-dont-use-it">
+        <span class="bm">27 April 2026 | 3 min read</span>
+        <span class="bt">What if the programme works, but people don't use it?</span>
+        <span class="bd">A programme can be well designed and funded, yet unused. What research on price, reliability and distance says about uptake, and how to measure it.</span>
+        <span class="go">Read article</span>
+      </button>
+      <button type="button" class="bbox" data-post="evidence-based-policy-external-validity">
+        <span class="bm">6 April 2026 | 3 min read</span>
+        <span class="bt">Evidence-based policy has a problem we don't talk about enough</span>
+        <span class="bd">A program that works in one district often shrinks at scale. Why external validity matters for evidence-based policy, and four fixes funders can use.</span>
+        <span class="go">Read article</span>
+      </button>
+    </div>
+    <div id="blogReader" class="reader" hidden>
+    <article class="rd" id="art-data-vs-community-voices" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">When the data says one thing and the community says another</h2>
+      <p class="meta"><time datetime="2026-10-12">12 October 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>The survey says 90 percent of households live within five kilometres of a health clinic. The community says the clinic is out of reach.</p>
+<p>Both can be right. This example is hypothetical, but the pattern is common in development work. The survey measured distance. The community describes access: a river that floods in the rainy season, a nurse who is absent on weekends, a queue that starts at dawn. Data answers the question it was asked. Communities answer the question they live with.</p>
+<h3>Treat disagreement as a finding</h3>
+<p>When numbers and community accounts conflict, the usual instinct is to pick a winner. A better instinct is to treat the conflict as a signal about measurement or context. One side did not lie. They measured different things.</p>
+<p>The World Bank's Voices of the Poor study reflects this idea at scale. For the World Development Report 2000/2001, it brought together the experiences of more than 60,000 poor women and men from 60 countries, using open-ended qualitative and participatory methods. The aim was to illuminate the human experience behind poverty statistics (<a href="https://www.imf.org/external/pubs/ft/fandd/2000/12/narayan.htm" rel="noopener">Narayan, 2000</a>).</p>
+<h3>Why mixed methods exist</h3>
+<p>Michael Bamberger, Vijayendra Rao and Michael Woolcock describe how qualitative methods can address limits of randomised trials and other quantitative impact evaluation methods. They also help distinguish design failures from implementation failures (<a href="https://openknowledge.worldbank.org/handle/10986/3732" rel="noopener">Bamberger, Rao and Woolcock, 2010</a>).</p>
+<p>That distinction matters when data and communities disagree. A survey indicator that looks healthy can hide a programme that is badly implemented. Community accounts often point to the implementation detail that a standard indicator cannot capture.</p>
+<h3>Consultation as evidence</h3>
+<p>Some standards make community voice a requirement. The IFC's Performance Standard 7 on Indigenous Peoples treats informed consultation and participation throughout the project process as a core requirement, and it may include free, prior and informed consent in some circumstances (<a href="https://www.ifc.org/en/insights-reports/2012/ifc-performance-standard-7" rel="noopener">IFC</a>).</p>
+<p>I have analysed consultation records gathered under Performance Standard 7 for a donor-funded climate resilience programme in Papua New Guinea, using thematic analysis to assess community engagement outcomes. Consultation records are data. They deserve the same rigour as a household survey: clear coding, a record of who spoke, and a record of who did not.</p>
+<h3>A way to reconcile the two</h3>
+<ul><li><strong>Check what the indicator measured.</strong> Who answered, when, and with what wording? Distance to a clinic and ability to use it are different variables.</li><li><strong>Take the numbers back to the community.</strong> Share preliminary results in a validation meeting and ask what is missing. Record the reactions as data.</li><li><strong>Add a third source.</strong> Administrative records, direct observation or a short follow-up survey can show which account holds in practice.</li><li><strong>Report both accounts and the gap.</strong> Do not average them. State what is established, what is disputed and what you could not resolve.</li><li><strong>Change the instrument.</strong> If the survey missed something the community raised, add a question in the next round.</li></ul>
+<h3>Document the disagreement</h3>
+<p>Keep a short log of each conflict between data and community accounts. Record what each source said, how each was collected, which checks you ran and what remains unresolved. The log shows later readers why a decision was made. It also stops the same disagreement from resurfacing in the next evaluation round as if it were new.</p>
+<h3>What changes for decision-makers</h3>
+<p>A programme manager who sees only the survey might conclude that access is solved. One who hears only the community might conclude that the whole system has failed. Reading both leads to a narrower and more useful decision: fix weekend staffing and the flood-prone road, and keep the clinics.</p>
+<p>The same logic applies to <button type="button" class="ilink" data-post="programme-works-but-people-dont-use-it">low uptake of a programme that works on paper</button> and to <button type="button" class="ilink" data-post="evidence-based-policy-external-validity">findings that do not transfer across settings</button>. In each case, local knowledge explains what the headline number cannot.</p>
+<p>When the data says one thing and the community says another, the disagreement is a finding. The work is to explain it.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Narayan, D. (2000). <a href="https://www.imf.org/external/pubs/ft/fandd/2000/12/narayan.htm" rel="noopener">Poverty is powerlessness and voicelessness</a>. Finance and Development, International Monetary Fund.</li><li>Bamberger, M., Rao, V., and Woolcock, M. (2010). <a href="https://openknowledge.worldbank.org/handle/10986/3732" rel="noopener">Using mixed methods in monitoring and evaluation: experiences from international development</a>. World Bank Policy Research Working Paper 5245.</li><li>International Finance Corporation (2012). <a href="https://www.ifc.org/en/insights-reports/2012/ifc-performance-standard-7" rel="noopener">Performance Standard 7: Indigenous Peoples</a>.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="average-hides-development-problem"><span class="bm">Older article</span><span class="bt">The average can hide the development problem</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-average-hides-development-problem" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">The average can hide the development problem</h2>
+      <p class="meta"><time datetime="2026-09-21">21 September 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>A national average can look like good news while a specific group gets nothing from it.</p>
+<p>Kenya's child stunting data shows how. The 2022 Kenya Demographic and Health Survey found that stunting among children under five fell from 26 percent in 2014 to 18 percent in 2022 (<a href="https://nutritionintl.org/?p=21949" rel="noopener">Nutrition International</a>). The Kenya National Bureau of Statistics reports the same 18 percent figure (<a href="https://www.knbs.or.ke/kenya-demographic-and-health-survey-kdhs-2022/" rel="noopener">KNBS</a>). By any national measure, that is progress.</p>
+<h3>Behind the 18 percent</h3>
+<p>County figures tell a different story. Kilifi recorded 37 percent stunting, West Pokot 34 percent and Samburu 31 percent, against 18 percent nationally (<a href="https://www.standardmedia.co.ke/health/nutrition-and-wellness/article/2001465865/who-distributes-food-to-children-faced-with-malnutrition-valued-at-sh26-million" rel="noopener">The Standard</a>). Children in Kilifi are about twice as likely to be stunted as the national figure implies, and West Pokot and Samburu are not far behind.</p>
+<p>Wealth shows the same split. About 28 percent of children under five in the lowest wealth quintile were stunted (<a href="https://www.gainhealth.org/sites/default/files/publications/documents/kenya-child-stunting-brief-1st-29sept25.pdf" rel="noopener">GAIN</a>, citing KDHS 2022). A national figure has no way to show that gap. It reports where most children happen to live.</p>
+<p>Averages also weight places by population. A large county with low stunting pulls the national figure down and makes smaller, harder-hit counties disappear from the headline.</p>
+<h3>The same pattern in human development</h3>
+<p>The UNDP's inequality-adjusted Human Development Index applies the same idea to a whole country. In UNDP's 2019 report, Kenya lost 26.3 percent of its human development value to inequality in the distribution of health, education and income. The average loss for sub-Saharan Africa was 30.5 percent (<a href="https://www.undp.org/node/240331" rel="noopener">UNDP</a>). These figures are several years old, but they illustrate the method: discount the average for how unevenly it is shared.</p>
+<h3>How an average is built</h3>
+<p>The measure you pick matters too. Take five households with monthly incomes of 10,000, 12,000, 14,000, 15,000 and 200,000 shillings. This example is hypothetical. The mean is 50,200 shillings and the median is 14,000. The mean describes none of the five households. The median describes the typical one. Income and wealth data are skewed in most countries, so a mean often overstates what a typical household has.</p>
+<h3>What to do about it</h3>
+<ul><li><strong>Disaggregate by default.</strong> Report results by county, sex, wealth group and rural or urban location. If the data cannot be broken down, say so.</li><li><strong>Report distributions as well as means.</strong> Use medians, percentiles and the gap between the best-off and worst-off groups. One high earner moves a mean. It barely moves a median.</li><li><strong>Set targets for the gap as well as the average.</strong> A programme that lifts the national figure by leaving the poorest counties untouched has met a target and missed the problem.</li><li><strong>Check whether the survey can support the breakdown.</strong> The KDHS was designed to give estimates at national and urban or rural level and, for some indicators, at county level (<a href="https://nutritionintl.org/?p=21949" rel="noopener">Nutrition International</a>). County estimates carry wider margins of error than national ones, so read them with confidence intervals.</li><li><strong>Target resources with the breakdown.</strong> A nutrition budget allocated from the national 18 percent would under-serve Kilifi.</li></ul>
+<h3>What the headline number is still good for</h3>
+<p>None of this makes national averages useless. They track direction over time and allow comparison across countries, and a fall from 26 to 18 percent is real progress. The problem starts when the average is the only number reported. It should open the discussion, not close it.</p>
+<h3>Where I apply this</h3>
+<p>In my <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">gender development project</a>, I compare the Gender Development Index across human development groups and regions instead of relying on a single global figure. The project reports the differences between groups instead of one mean.</p>
+<p>When someone presents a headline number, a good question is "for whom?" It takes five seconds to ask and often changes the decision. Uptake data raises the same question: <button type="button" class="ilink" data-post="programme-works-but-people-dont-use-it">who is missing from the people a programme reaches?</button></p>
+<p>An average describes the middle. Development problems often sit at the edges.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Nutrition International. <a href="https://nutritionintl.org/?p=21949" rel="noopener">Government of Kenya releases the Kenya Demographic and Health Survey 2022 key indicators report</a>.</li><li>Kenya National Bureau of Statistics. <a href="https://www.knbs.or.ke/kenya-demographic-and-health-survey-kdhs-2022/" rel="noopener">Kenya Demographic and Health Survey 2022</a>.</li><li>The Standard. <a href="https://www.standardmedia.co.ke/health/nutrition-and-wellness/article/2001465865/who-distributes-food-to-children-faced-with-malnutrition-valued-at-sh26-million" rel="noopener">WHO distributes food to children faced with malnutrition valued at Sh26 million</a>.</li><li>GAIN. <a href="https://www.gainhealth.org/sites/default/files/publications/documents/kenya-child-stunting-brief-1st-29sept25.pdf" rel="noopener">Kenya child stunting brief</a>, September 2025.</li><li>UNDP. <a href="https://www.undp.org/node/240331" rel="noopener">Human Development Report 2019 launch coverage, including inequality-adjusted HDI for Kenya</a>.</li><li>Kigan, K. <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">Gender development across countries, 1990 to 2021</a>. GitHub repository.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="data-vs-community-voices"><span class="bm">Newer article</span><span class="bt">When the data says one thing and the community says another</span></button><button type="button" class="bbox" data-post="best-statistical-tool-fits-the-question"><span class="bm">Older article</span><span class="bt">The best statistical tool is the one that fits the question</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-best-statistical-tool-fits-the-question" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">The best statistical tool is the one that fits the question</h2>
+      <p class="meta"><time datetime="2026-08-31">31 August 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>People often ask which statistical software to learn first. It is a fair question, but it comes second. The first question is what you are trying to find out.</p>
+<p>Miguel Hernán, John Hsu and Brian Healy organise the scientific work of data analysis into three tasks: description, prediction and counterfactual prediction, which includes causal inference (<a href="https://doi.org/10.1080/09332480.2019.1579578" rel="noopener">Hernán et al., 2019</a>). Each task needs different data, different assumptions and different methods. Matching them is the skill.</p>
+<h3>Description: what is happening?</h3>
+<p>Description summarises features of the world. In development work, that means questions such as how many children aged 6 to 14 are out of school in a county, or what share of households report no toilet.</p>
+<p>The methods are tabulations, weighted means, distributions and maps. Excel can handle small datasets. Stata, R, SPSS and Python handle survey weights and larger files with less risk. Description sounds simple, but it depends on clean data and clear definitions (<button type="button" class="ilink" data-post="your-dataset-has-a-story">start with the dataset</button>).</p>
+<h3>Prediction: who is likely to?</h3>
+<p>Prediction maps inputs to outputs. Which households are most likely to drop out of school? Which clinics are most likely to run out of stock?</p>
+<p>Regression and classification models fit here, judged by how well they predict. A good prediction model makes no claim about why. A variable can predict dropout without causing it, and removing that variable will not change outcomes.</p>
+<h3>Cause and effect: what if we had done something different?</h3>
+<p>Counterfactual questions ask what would have happened under a different policy. Did the cash transfer raise attendance? Did the training programme raise incomes?</p>
+<p>These questions need a design before they need software. Randomised assignment or a credible comparison group, such as difference-in-differences or regression discontinuity, supplies the missing counterfactual. <a href="https://openknowledge.worldbank.org/handle/10986/25030" rel="noopener">Impact Evaluation in Practice</a> explains these methods for policymakers and practitioners. A regression on observational data can describe an association, but a coefficient from it is not automatically a causal effect (<button type="button" class="ilink" data-post="correlation-is-easy-explaining-why-is-hard">the difference matters</button>).</p>
+<h3>Why and how: what explains it?</h3>
+<p>Numbers show that something changed. They rarely show why. Interviews, focus group discussions and observation answer that part.</p>
+<p>Michael Bamberger, Vijayendra Rao and Michael Woolcock argue that qualitative methods can address some limits of randomised trials and quantitative evaluation. They also help separate design failures from implementation failures (<a href="https://openknowledge.worldbank.org/handle/10986/3732" rel="noopener">Bamberger, Rao and Woolcock, 2010</a>). A programme that did not work might have been a bad idea, or a good idea badly delivered. Only the second kind of failure is fixable without starting over.</p>
+<h3>One programme, four questions</h3>
+<p>Take a school feeding programme. A descriptive question asks how many children receive meals each day. A predictive question asks which schools are most likely to miss deliveries. A causal question asks whether meals raised attendance compared with similar schools without them. An explanatory question asks why some parents still keep children home. Four questions need four methods. One tool applied to all four would answer at most one of them well.</p>
+<h3>A four-step check before you choose a tool</h3>
+<ul><li><strong>Write the question in one sentence.</strong> If you cannot, the analysis will wander.</li><li><strong>Label its type.</strong> Is it description, prediction, cause and effect, or explanation?</li><li><strong>List the data and design it needs.</strong> A causal question with no comparison group cannot be answered, whatever the software.</li><li><strong>Use the simplest method that answers the question, and state its limits.</strong> My <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">gender development project</a> says plainly that the data are observational, so its results are associations.</li></ul>
+<h3>Where software choice enters</h3>
+<p>After the question is set, software becomes a practical choice about cost, team skills and reproducibility. I compare two common options in <button type="button" class="ilink" data-post="stata-vs-excel">Stata vs Excel</button>. R and Python are free and script-based (<a href="https://r4ds.hadley.nz/" rel="noopener">R for Data Science</a>). SPSS suits many survey workflows. Any of them can answer a well-posed question, and none of them can rescue a badly posed one.</p>
+<p>The best statistical tool is the one that fits the question.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Hernán, M. A., Hsu, J., and Healy, B. (2019). <a href="https://doi.org/10.1080/09332480.2019.1579578" rel="noopener">A second chance to get causal inference right: a classification of data science tasks</a>. CHANCE, 32(1), 42-49.</li><li>Gertler, P. J., Martinez, S., Premand, P., Rawlings, L. B., and Vermeersch, C. M. J. (2016). <a href="https://openknowledge.worldbank.org/handle/10986/25030" rel="noopener">Impact evaluation in practice</a>, second edition. World Bank.</li><li>Bamberger, M., Rao, V., and Woolcock, M. (2010). <a href="https://openknowledge.worldbank.org/handle/10986/3732" rel="noopener">Using mixed methods in monitoring and evaluation: experiences from international development</a>. World Bank Policy Research Working Paper 5245.</li><li>Wickham, H., Çetinkaya-Rundel, M., and Grolemund, G. <a href="https://r4ds.hadley.nz/" rel="noopener">R for data science</a>, second edition.</li><li>Kigan, K. <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">Gender development across countries, 1990 to 2021</a>. GitHub repository.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="average-hides-development-problem"><span class="bm">Newer article</span><span class="bt">The average can hide the development problem</span></button><button type="button" class="bbox" data-post="what-learning-r-taught-me"><span class="bm">Older article</span><span class="bt">What learning R taught me about quantitative research</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-what-learning-r-taught-me" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">What learning R taught me about quantitative research</h2>
+      <p class="meta"><time datetime="2026-08-10">10 August 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>I have been spending more time in R lately, working through quantitative analysis for my development research. I picked it up to sharpen a technical skill. What I learned is that good quantitative work happens before you run a test.</p>
+<p>Two projects shaped these notes: an <a href="https://github.com/kellykigan/Education_Africa_Analysis-R-Project" rel="noopener">analysis of UNESCO education indicators across African countries</a> and a <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">study of the Gender Development Index across 195 countries</a>. A free resource I recommend for learning R is <a href="https://r4ds.hadley.nz/" rel="noopener">R for Data Science</a>.</p>
+<h3>1. Understand the dataset before any test</h3>
+<p>Before touching a statistical test, I had to understand what the dataset contained. What did each variable measure? How was it coded? Which units did it use? Where were the odd values hiding?</p>
+<p>For the education data, I read the indicator definitions before opening a script, because attendance, enrolment and school life expectancy measure different things. The gender development data covers 195 countries and 39 variables. I ran data quality and missing-data checks before any comparison. That groundwork decides whether anything downstream makes sense. I wrote more about this habit in <button type="button" class="ilink" data-post="your-dataset-has-a-story">your dataset has a story before you analyse it</button>.</p>
+<h3>2. Cleaning is research</h3>
+<p>Cleaning the data was not a side task. Missing values, duplicates and inconsistent coding shape the conclusions you end up drawing. Fixing them is research, not preparation for research.</p>
+<p>Every cleaning decision is a choice someone could challenge. In R, those choices sit in a script where others can read them.</p>
+<h3>3. Let the question pick the method</h3>
+<p>I also had to resist the urge to ask what I could run on this dataset. The better question was what I was trying to answer and what evidence would answer it.</p>
+<p>Sometimes that means simple descriptive statistics. Sometimes it means regression. For the education project, the question came first: does spending on primary education go with attendance once time and location are accounted for? The method followed from that. Ideally the question picks the method, not the other way round. I expand on this in <button type="button" class="ilink" data-post="best-statistical-tool-fits-the-question">the best statistical tool is the one that fits the question</button>.</p>
+<h3>4. Draw the data early</h3>
+<p>Visualising the data early helped me see distributions and relationships that tables could not show. It was a way to ask sharper questions before committing to an analysis.</p>
+<p>Francis Anscombe made the same point in 1973 with four datasets that share the same means, variances and regression line but look nothing alike on a chart (<a href="https://doi.org/10.1080/00031305.1973.10478966" rel="noopener">Anscombe, 1973</a>). A histogram takes seconds to draw.</p>
+<h3>5. Say what the data cannot tell you</h3>
+<p>The biggest lesson was that correlation is not causation. Development outcomes are shaped by overlapping economic, social and institutional factors. A regression coefficient cannot separate them on its own.</p>
+<p>That is why the gender development write-up states that the data are observational, so the results show associations, not causal effects. Being honest about what the data cannot tell you matters as much as what it can. I explore the difference in <button type="button" class="ilink" data-post="correlation-is-easy-explaining-why-is-hard">correlation is easy, explaining why is hard</button>.</p>
+<h3>What I would tell someone starting out</h3>
+<ul><li><strong>Begin with a question you care about.</strong> A dataset without a question produces charts without meaning.</li><li><strong>Pick one public dataset and finish the project.</strong> UNESCO and UNDP data are free, and finishing one project teaches more than starting five.</li><li><strong>Put the script on GitHub.</strong> Public code makes you write more clearly, and it lets others rerun your work.</li><li><strong>Write the limits into the README.</strong> A reader who knows what a project cannot show can trust what it does show.</li></ul>
+<p>Both of my projects are public on GitHub with their data and code, so anyone can rerun them and check the numbers.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Wickham, H., Çetinkaya-Rundel, M., and Grolemund, G. <a href="https://r4ds.hadley.nz/" rel="noopener">R for data science</a>, second edition.</li><li>Anscombe, F. J. (1973). <a href="https://doi.org/10.1080/00031305.1973.10478966" rel="noopener">Graphs in statistical analysis</a>. The American Statistician, 27(1), 17-21.</li><li>Kigan, K. <a href="https://github.com/kellykigan/Education_Africa_Analysis-R-Project" rel="noopener">Education indicators in Africa, 2010 to 2023</a>. GitHub repository.</li><li>Kigan, K. <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">Gender development across countries, 1990 to 2021</a>. GitHub repository.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="best-statistical-tool-fits-the-question"><span class="bm">Newer article</span><span class="bt">The best statistical tool is the one that fits the question</span></button><button type="button" class="bbox" data-post="stata-vs-excel"><span class="bm">Older article</span><span class="bt">Stata vs Excel: which one should you use?</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-stata-vs-excel" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">Stata vs Excel: which one should you use?</h2>
+      <p class="meta"><time datetime="2026-07-20">20 July 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>If you work with development data, you have probably used Excel. As your analysis grows more complex, you may start to wonder whether you need a tool like Stata.</p>
+<p>The honest answer is that you probably need both, for different jobs.</p>
+<h3>What Excel does well</h3>
+<ul><li>Entering and organising data</li><li>Simple calculations</li><li>Quick tables and charts</li><li>Managing smaller datasets</li></ul>
+<p>A single Excel worksheet holds up to 1,048,576 rows by 16,384 columns (<a href="https://support.microsoft.com/en-us/office/1672b34d-7043-467e-8e27-269d656771c3" rel="noopener">Microsoft</a>), so size alone is rarely the first problem. The problems start elsewhere.</p>
+<h3>Where spreadsheets fail without warning</h3>
+<p>Excel changes data silently. With default settings, it converts some gene names to dates and floating-point numbers. A scan of leading genomics journals found erroneous gene name conversions in 19.6 percent of papers with supplementary Excel gene lists in the selected journals (<a href="https://doi.org/10.1186/s13059-016-1044-7" rel="noopener">Ziemann, Eren and El-Osta, 2016</a>). Nobody set out to introduce those errors. Default behaviour did it.</p>
+<p>Spreadsheets also keep no record of what you did. The Reinhart and Rogoff growth study is the best-known example. A coding error in the original spreadsheet left five countries out of an average. Once that error and others were corrected, average growth for high-debt countries moved from -0.1 percent to 2.2 percent (<a href="https://doi.org/10.1093/cje/bet075" rel="noopener">Herndon, Ash and Pollin, 2013</a>). A formula range ended a few rows early, and nothing in the file showed it.</p>
+<h3>What Stata is designed for</h3>
+<ul><li>Statistical analysis</li><li>Working with larger datasets</li><li>Cleaning and transforming data</li><li>Regression and other statistical tests</li><li>Reproducible research using do-files</li></ul>
+<p>A do-file is a text file of commands. It reads the raw data, cleans it, runs the analysis and produces the tables. Anyone can rerun it and get the same numbers. Stata's own documentation describes sequencing commands to read and clean data, test, estimate and report as the heart of reproducible research (<a href="https://www.stata.com/why-use-stata/" rel="noopener">Stata</a>). That is a vendor's claim, but the DIME Analytics handbook, written by World Bank researchers, builds its workflow around the same idea and includes a master do-file template (<a href="https://worldbank.github.io/dime-data-handbook/" rel="noopener">DIME Analytics</a>).</p>
+<p>My own <a href="https://github.com/kellykigan/life-expectancy-development-analysis-stata" rel="noopener">life expectancy</a> and <a href="https://github.com/kellykigan/african-farm-households-stata" rel="noopener">farm household</a> projects follow that pattern in Stata. Each runs from raw data to results from a script.</p>
+<h3>Use both, with rules</h3>
+<p>That does not mean you must choose one. Excel is useful for managing and exploring data. Stata becomes especially useful when you need to analyse that data systematically and document your work. A workable split looks like this:</p>
+<ul><li><strong>Keep the raw file untouched.</strong> Save a read-only copy before anything else.</li><li><strong>Use Excel to look and to enter.</strong> Check the data, build quick tables and enter small datasets.</li><li><strong>Export to CSV and clean in a do-file.</strong> Every change then leaves a trace.</li><li><strong>Test reproducibility.</strong> A colleague should be able to rerun your do-file on the raw data and get your numbers.</li></ul>
+<h3>A quick decision guide</h3>
+<ul><li>You are entering data from a paper form or tallying a few hundred records: Excel.</li><li>You need a quick chart for a meeting: Excel.</li><li>You are merging survey rounds, constructing indicators or running regressions: Stata, R or Python.</li><li>Someone else must be able to verify your numbers: a script, in whichever language you use.</li></ul>
+<p>The last line settles most arguments. If the analysis feeds a report that a donor or ministry will rely on, it needs a record of how every number was produced.</p>
+<h3>A note on cost</h3>
+<p>Stata is commercial software. R and Python are free and do the same work with code (<a href="https://r4ds.hadley.nz/" rel="noopener">R for Data Science</a> is a good starting point). The principle is the same in all three: write down every step in code, so that the analysis can be checked.</p>
+<p>Whichever tool you pick, pick it for the question you are answering. The tool matters less than the habit of keeping the work traceable (<button type="button" class="ilink" data-post="best-statistical-tool-fits-the-question">see how to match the method to the question</button>).</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Microsoft. <a href="https://support.microsoft.com/en-us/office/1672b34d-7043-467e-8e27-269d656771c3" rel="noopener">Excel specifications and limits</a>.</li><li>Ziemann, M., Eren, Y., and El-Osta, A. (2016). <a href="https://doi.org/10.1186/s13059-016-1044-7" rel="noopener">Gene name errors are widespread in the scientific literature</a>. Genome Biology, 17, 177.</li><li>Herndon, T., Ash, M., and Pollin, R. (2013). <a href="https://doi.org/10.1093/cje/bet075" rel="noopener">Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff</a>. Cambridge Journal of Economics.</li><li>StataCorp. <a href="https://www.stata.com/why-use-stata/" rel="noopener">Why use Stata?</a></li><li>Bjärkefur, K., Cardoso de Andrade, L., Daniels, B., and Jones, M. R. (2021). <a href="https://worldbank.github.io/dime-data-handbook/" rel="noopener">Development research in practice: the DIME Analytics data handbook</a>. World Bank.</li><li>Wickham, H., Çetinkaya-Rundel, M., and Grolemund, G. <a href="https://r4ds.hadley.nz/" rel="noopener">R for data science</a>, second edition.</li><li>Kigan, K. <a href="https://github.com/kellykigan/life-expectancy-development-analysis-stata" rel="noopener">Life expectancy and development indicators</a> and <a href="https://github.com/kellykigan/african-farm-households-stata" rel="noopener">African farm households</a>. GitHub repositories.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="what-learning-r-taught-me"><span class="bm">Newer article</span><span class="bt">What learning R taught me about quantitative research</span></button><button type="button" class="bbox" data-post="your-dataset-has-a-story"><span class="bm">Older article</span><span class="bt">Your dataset has a story before you analyse it</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-your-dataset-has-a-story" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">Your dataset has a story before you analyse it</h2>
+      <p class="meta"><time datetime="2026-06-29">29 June 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>Before running a regression, creating a chart or testing a hypothesis, spend time getting to know your dataset.</p>
+<p>In development research, a dataset is rarely just a collection of numbers. It records who was surveyed, what was measured, when the data was collected and how each variable was coded. Skip that reading and the analysis can look precise while resting on problematic data.</p>
+<h3>A spreadsheet error that changed the result</h3>
+<p>In 2013, Thomas Herndon, Michael Ash and Robert Pollin tried to replicate a well-known study on public debt and growth. They found selective exclusion of available data, a coding error and unconventional weighting. The coding error left five countries out of an average. After correction, countries with public debt above 90 percent of GDP averaged 2.2 percent annual growth over 1946 to 2009, not the -0.1 percent first published (<a href="https://doi.org/10.1093/cje/bet075" rel="noopener">Herndon, Ash and Pollin, 2013</a>).</p>
+<p>The errors stayed hidden until someone reran the analysis from the original spreadsheet. A routine check of the data and the formulas would have caught the omission.</p>
+<h3>Six questions to ask first</h3>
+<ul><li><strong>How many observations do I have?</strong> Compare the count with the sample design. In my audit of an agricultural survey covering about 9,600 households in 11 countries (<a href="https://github.com/kellykigan/african-farm-households-stata" rel="noopener">repository</a>), the first check was whether household identifiers were unique and complete.</li><li><strong>What does each variable measure?</strong> Read the codebook. "Income" might mean household income, per person income or farm income, over a month or a year.</li><li><strong>Are there missing or unusual values?</strong> Codes such as -99 or 9999 behave like real numbers in an average. Patterns in missing data are also findings. In the farm survey, missing farm income was not spread evenly across countries.</li><li><strong>Are any variables coded incorrectly?</strong> Look for categories stored as numbers, dates stored as text and mixed units such as shillings and dollars or acres and hectares.</li><li><strong>Are there obvious outliers?</strong> Implausible household sizes and negative ages need a decision: correct, flag or drop. Write the decision down.</li><li><strong>What does the distribution look like?</strong> Skewed income calls for a log transformation or the median. Plot it before you summarise it.</li></ul>
+<p>That last point is old advice. In 1973, Francis Anscombe published four small datasets with the same means, variances, correlation and regression line, which look completely different when graphed (<a href="https://doi.org/10.1080/00031305.1973.10478966" rel="noopener">Anscombe, 1973</a>). Summary statistics hide structure that a chart shows at once.</p>
+<h3>What a first pass looks like</h3>
+<p>In Stata, a first pass can use <code>codebook</code>, <code>summarize, detail</code>, <code>duplicates report</code> and <code>misstable summarize</code>. In R, <code>glimpse()</code>, <code>summary()</code> and a duplicate check with the janitor package do similar work, and <a href="https://r4ds.hadley.nz/" rel="noopener">R for Data Science</a> covers the tidyverse tools. None of these takes long to run. The slow part is reading the output and asking what each line implies about the survey.</p>
+<h3>Write the decisions down</h3>
+<p>The World Bank's DIME Analytics handbook, written for development researchers, devotes its data-cleaning chapter to tidy data, quality control and documentation (<a href="https://worldbank.github.io/dime-data-handbook/" rel="noopener">DIME Analytics</a>). Keep a cleaning script. It is a record of every decision someone might later question, including you.</p>
+<p>If you work in Stata, a do-file does this job. If you work in R, a script does. Either way, the raw file stays untouched. For tool choices, see <button type="button" class="ilink" data-post="stata-vs-excel">Stata vs Excel: which one should you use?</button></p>
+<h3>Then choose the method</h3>
+<p>Understand the data first. Then decide which statistical methods make sense. A variable that looks like income might hold zeros, missing values or amounts in different units. If you do not find that first, a regression will return precise-looking coefficients built on problematic data.</p>
+<p>Your dataset has a story. Your first job as a researcher is to understand it.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Herndon, T., Ash, M., and Pollin, R. (2014). <a href="https://doi.org/10.1093/cje/bet075" rel="noopener">Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff</a>. Cambridge Journal of Economics, first published online December 2013.</li><li>Anscombe, F. J. (1973). <a href="https://doi.org/10.1080/00031305.1973.10478966" rel="noopener">Graphs in statistical analysis</a>. The American Statistician, 27(1), 17-21.</li><li>Bjärkefur, K., Cardoso de Andrade, L., Daniels, B., and Jones, M. R. (2021). <a href="https://worldbank.github.io/dime-data-handbook/" rel="noopener">Development research in practice: the DIME Analytics data handbook</a>. World Bank.</li><li>Kigan, K. <a href="https://github.com/kellykigan/african-farm-households-stata" rel="noopener">African farm households: data quality audit</a>. GitHub repository.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="stata-vs-excel"><span class="bm">Newer article</span><span class="bt">Stata vs Excel: which one should you use?</span></button><button type="button" class="bbox" data-post="africa-urban-infrastructure-gap"><span class="bm">Older article</span><span class="bt">Where should Africa's urban infrastructure money go first?</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-africa-urban-infrastructure-gap" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">Where should Africa's urban infrastructure money go first?</h2>
+      <p class="meta"><time datetime="2026-06-08">8 June 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>Africa's cities are growing faster than the housing, roads, water systems and services built to support them.</p>
+<p>Kigali grew from about 219,000 people in 1990 to 1.2 million in 2010, more than five-fold (<a href="https://www.gov.uk/research-for-development-outputs/kigali-a-policy-narrative" rel="noopener">Jones, Ferreira and Murray, 2016</a>). Lilongwe's census count rose from 223,318 in 1987 to 989,318 in 2018 (<a href="https://www.citypopulation.de/en/malawi/admin/central/MW210__lilongwe" rel="noopener">National Statistical Office of Malawi, via citypopulation.de</a>). The African Development Bank expects the number of people living in African cities to nearly triple, to about 1.5 billion by 2050 (<a href="https://www.afdb.org/en/documents/millions-billions-financing-development-african-cities" rel="noopener">AfDB</a>).</p>
+<h3>The size of the gap</h3>
+<p>The African Development Bank estimates that Africa's infrastructure needs run to $130 billion to $170 billion a year, with a financing gap of $68 billion to $108 billion (<a href="https://www.afdb.org/fileadmin/uploads/afdb/Documents/Publications/2018AEO/African_Economic_Outlook_2018_-_EN_Chapter3.pdf" rel="noopener">AfDB, 2018</a>). Its report on city finance says closing the gap requires more than doubling current investment, with the bulk deployed in cities (<a href="https://www.afdb.org/en/documents/millions-billions-financing-development-african-cities" rel="noopener">AfDB</a>).</p>
+<p>Treat quoted figures with care, because estimates differ by scope and method. The Africa Infrastructure Country Diagnostic, cited in the World Bank's Africa's Cities study, estimated annual needs of $68 billion to $93 billion (<a href="https://www.worldbank.org/en/programs/africa-regional-studies/publication/african-cities-opening-doors-to-the-world" rel="noopener">World Bank</a>). The $150 billion figure that circulates comes from remarks about the continent's total infrastructure needs at the 2025 Africa Investment Forum, and it describes all infrastructure, not urban infrastructure alone (<a href="https://www.afdb.org/en/news-and-events/time-running-out-close-continents-massive-infrastructure-and-climate-finance-gap-2025-africa-investment-forum-panel-warns-89095" rel="noopener">AfDB</a>).</p>
+<h3>Where the gap shows</h3>
+<p>The gap shows up in informal settlements. In 2022, 53.6 percent of the urban population in sub-Saharan Africa lived in slums or slum-like conditions, the highest share of any region (<a href="https://sdgs.un.org/Goals/Goal11" rel="noopener">UN Sustainable Development Goal 11</a>). The same source projects the greatest proportional increase in slum dwellers in sub-Saharan Africa by 2030.</p>
+<h3>What the estimates do not tell you</h3>
+<p>The estimates describe scale. They do not rank investments by return, and they do not say which city should go first. Sequencing needs local data: where growth is heading, what land costs, how many households a given connection would reach and who pays for upkeep. National totals cannot answer those questions. City governments, working with donors, would need to collect the data.</p>
+<p>The evidence base for sequencing is also thinner than the evidence for scale. I treat any ordered list, including the one below, as a hypothesis to test city by city.</p>
+<h3>Where should the money go first?</h3>
+<p>The World Bank's Africa's Cities study argues that African cities produce few goods and services for trade. Part of the reason is that they lack functioning land markets and regulations, and early, coordinated infrastructure investment (<a href="https://www.worldbank.org/en/programs/africa-regional-studies/publication/african-cities-opening-doors-to-the-world" rel="noopener">World Bank</a>). That evidence points to an order of priorities. What follows is my reading of it.</p>
+<ul><li><strong>Land and network backbone ahead of settlement.</strong> Roads, water mains and drainage are easier to build before households settle along the route. They also set the pattern that growth follows.</li><li><strong>Basic services in existing settlements.</strong> Start where density is highest. Water, sanitation and drainage connections come first, then transport links to jobs.</li><li><strong>Secure tenure and housing finance.</strong> Households invest in homes they are confident they can keep. Clear land records also let cities plan and charge for services.</li><li><strong>Project preparation capacity.</strong> At the 2025 Africa Investment Forum, Amadou Hott named the scarcity of bankable projects as the most severe bottleneck (<a href="https://www.afdb.org/en/news-and-events/time-running-out-close-continents-massive-infrastructure-and-climate-finance-gap-2025-africa-investment-forum-panel-warns-89095" rel="noopener">AfDB</a>). Money without prepared projects sits unspent.</li></ul>
+<p>Sequencing will differ by city. A secondary city with a fast-expanding edge needs the first priority more than a mature capital with a stable footprint.</p>
+<p>Capital is scarce, so order matters. The cheapest moment to build a road is before there are houses along it.</p>
+<p>The question for ministries and donors is not whether to invest in housing and transport. It is whether to do it now or after the backlog grows. Every year of delay adds people to settlements that will later need to be upgraded around them.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Jones, P., Ferreira, L., and Murray, S. (2016). <a href="https://www.gov.uk/research-for-development-outputs/kigali-a-policy-narrative" rel="noopener">Kigali: a policy narrative</a>. World Bank.</li><li>National Statistical Office of Malawi. <a href="https://www.citypopulation.de/en/malawi/admin/central/MW210__lilongwe" rel="noopener">Lilongwe City population census counts</a>, compiled by citypopulation.de.</li><li>African Development Bank. <a href="https://www.afdb.org/en/documents/millions-billions-financing-development-african-cities" rel="noopener">From millions to billions: financing the development of African cities</a>.</li><li>African Development Bank (2018). <a href="https://www.afdb.org/fileadmin/uploads/afdb/Documents/Publications/2018AEO/African_Economic_Outlook_2018_-_EN_Chapter3.pdf" rel="noopener">African Economic Outlook 2018, chapter 3</a>.</li><li>African Development Bank. <a href="https://www.afdb.org/en/news-and-events/time-running-out-close-continents-massive-infrastructure-and-climate-finance-gap-2025-africa-investment-forum-panel-warns-89095" rel="noopener">Time is running out to close continent's massive infrastructure and climate-finance gap: 2025 Africa Investment Forum panel warns</a>.</li><li>World Bank. <a href="https://www.worldbank.org/en/programs/africa-regional-studies/publication/african-cities-opening-doors-to-the-world" rel="noopener">Africa's cities: opening doors to the world</a>.</li><li>United Nations. <a href="https://sdgs.un.org/Goals/Goal11" rel="noopener">Sustainable Development Goal 11: sustainable cities and communities</a>.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="your-dataset-has-a-story"><span class="bm">Newer article</span><span class="bt">Your dataset has a story before you analyse it</span></button><button type="button" class="bbox" data-post="correlation-is-easy-explaining-why-is-hard"><span class="bm">Older article</span><span class="bt">Correlation is easy. Explaining why is hard.</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-correlation-is-easy-explaining-why-is-hard" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">Correlation is easy. Explaining why is hard.</h2>
+      <p class="meta"><time datetime="2026-05-18">18 May 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>Two things move together. Income rises, and school attendance rises with it. The correlation takes seconds to calculate. What it means takes much longer.</p>
+<p>A correlation tells you that two things are related. It does not tell you why. In development research, that difference decides whether a programme helps or wastes money.</p>
+<h3>Four explanations for one pattern</h3>
+<ul><li><strong>Income drives attendance.</strong> Richer families can pay for uniforms and supplies, and no longer need children to work.</li><li><strong>Attendance drives income.</strong> Schooling raises earnings later, so the arrow can point the other way over time.</li><li><strong>A third factor drives both.</strong> Access to better jobs, roads, clinics or public services can raise household income and make school easier to reach at the same time.</li><li><strong>The pattern is partly an artefact.</strong> Income and attendance are measured differently across countries, and small samples produce strong-looking relationships by chance.</li></ul>
+<p>A single scatterplot cannot separate these four. Each needs a different kind of evidence.</p>
+<p>Each explanation leads to a different policy. If income drives attendance, cash support makes sense. If services drive both, building schools and roads comes first.</p>
+<h3>What the evidence says about cash and school</h3>
+<p>A systematic review of 35 studies, drawn from 75 reports, found that both conditional and unconditional cash transfers improve the odds of being enrolled in and attending school compared with no transfer. Test scores moved little (<a href="https://doi.org/10.1080/19439342.2014.890362" rel="noopener">Baird et al., 2014</a>).</p>
+<p>In those studies, extra household money does raise attendance. That supports the first explanation for programmes that give families cash. It does not show that economy-wide income growth has the same effect, and it says little about learning.</p>
+<h3>What it takes to move from correlation to explanation</h3>
+<ul><li><strong>Timing.</strong> Did income change before attendance did?</li><li><strong>A comparison group.</strong> Randomised trials, natural experiments and difference-in-differences designs make the question "what would have happened otherwise?" answerable. <a href="https://openknowledge.worldbank.org/handle/10986/25030" rel="noopener">Impact Evaluation in Practice</a> describes these methods for practitioners.</li><li><strong>Controls for other factors.</strong> Regression can adjust for what you measured. It cannot adjust for what you did not measure.</li><li><strong>Context.</strong> Interviews with families explain why children left school. The numbers only show that they did.</li></ul>
+<p>Miguel Hernán, John Hsu and Brian Healy argue that causal analysis needs domain knowledge on top of good data and algorithms (<a href="https://doi.org/10.1080/09332480.2019.1579578" rel="noopener">Hernán et al., 2019</a>). The statistics cannot supply the explanation alone.</p>
+<h3>A quick test for any claim you read</h3>
+<p>Reports often say that an outcome rose after a programme started. Four questions test whether the programme caused it.</p>
+<ul><li>Which way could the arrow point?</li><li>What else could drive both measures?</li><li>Was there a comparison group that did not receive the programme?</li><li>Does the effect hold across settings, or only in one?</li></ul>
+<p>A report that answers none of these has described a pattern. It has not explained it. That is a useful result, provided the report says so.</p>
+<h3>Why this matters for programme design</h3>
+<p>A donor who reads that countries with higher income have higher attendance might fund income support. A ministry that reads the same fact might build schools. Both can be right in some places and wrong in others. Without an explanation, the choice rests on assumption, and the cost of a wrong assumption falls on the households the programme was meant to reach.</p>
+<h3>How I handle this in my own work</h3>
+<p>In my <a href="https://github.com/kellykigan/Education_Africa_Analysis-R-Project" rel="noopener">R analysis of UNESCO education indicators</a>, I test whether higher public spending on primary education goes with higher net attendance after controlling for time and urban-rural location. The wording is deliberate. "Goes with" describes an association.</p>
+<p>In my <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">gender development project</a>, the write-up states that the data are observational, so the results show associations, not causal effects. Saying so plainly protects the reader from drawing a policy conclusion the data cannot support.</p>
+<p>A strong correlation is a good starting point. It tells you where to look. Explaining what is happening takes context, careful data analysis and evidence.</p>
+<p>The number is easy. The explanation is the research.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Baird, S., Ferreira, F. H. G., Özler, B., and Woolcock, M. (2014). <a href="https://doi.org/10.1080/19439342.2014.890362" rel="noopener">Conditional, unconditional and everything in between: a systematic review of the effects of cash transfer programmes on schooling outcomes</a>. Journal of Development Effectiveness.</li><li>Gertler, P. J., Martinez, S., Premand, P., Rawlings, L. B., and Vermeersch, C. M. J. (2016). <a href="https://openknowledge.worldbank.org/handle/10986/25030" rel="noopener">Impact evaluation in practice</a>, second edition. World Bank.</li><li>Hernán, M. A., Hsu, J., and Healy, B. (2019). <a href="https://doi.org/10.1080/09332480.2019.1579578" rel="noopener">A second chance to get causal inference right: a classification of data science tasks</a>. CHANCE, 32(1), 42-49.</li><li>Kigan, K. <a href="https://github.com/kellykigan/Education_Africa_Analysis-R-Project" rel="noopener">Education indicators in Africa, 2010 to 2023</a> and <a href="https://github.com/kellykigan/gender-development-r-analysis" rel="noopener">Gender development across countries, 1990 to 2021</a>. GitHub repositories.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="africa-urban-infrastructure-gap"><span class="bm">Newer article</span><span class="bt">Where should Africa's urban infrastructure money go first?</span></button><button type="button" class="bbox" data-post="programme-works-but-people-dont-use-it"><span class="bm">Older article</span><span class="bt">What if the programme works, but people don't use it?</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-programme-works-but-people-dont-use-it" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">What if the programme works, but people don't use it?</h2>
+      <p class="meta"><time datetime="2026-04-27">27 April 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>A service can be well designed. The funding can be there. The infrastructure can be built. And people may still not use it.</p>
+<p>Maybe it costs too much. Maybe it is too far away. Maybe people do not trust it. Maybe it does not fit how they live.</p>
+<p>Implementation data tells you whether the service exists. It does not tell you whether anyone uses it. A programme can work perfectly on paper and still make no difference to people's lives. At that point the question is the one every programme manager dreads: why aren't people using it?</p>
+<h3>Price changes who shows up</h3>
+<p>In western Kenya, Jessica Cohen and Pascaline Dupas randomised the price at which prenatal clinics sold insecticide-treated bed nets. Demand was 75 percent lower at the $0.75 cost-sharing price than when nets were free. Women who paid were no more likely to use the net than women who received it free (<a href="https://www.povertyactionlab.org/evaluation/free-distribution-or-cost-sharing-evidence-malaria-prevention-experiment-kenya" rel="noopener">J-PAL summary of Cohen and Dupas, 2010</a>).</p>
+<p>Charging a small fee did not screen for people who would use the net. It removed people who would have used it.</p>
+<h3>Reliability and small costs matter</h3>
+<p>In rural Rajasthan, India, immunisation was free at public facilities, yet few children completed the schedule. Researchers tested monthly immunisation camps that ran on a reliable schedule. Full immunisation among children aged 1 to 3 rose from 6 percent in comparison villages to 18 percent with reliable camps. It reached 39 percent when parents also received small incentives of lentils and metal plates (<a href="https://doi.org/10.1136/bmj.c2220" rel="noopener">Banerjee et al., 2010</a>).</p>
+<p>The parents were not hostile to vaccines. Even without incentives, 78 percent of children had received at least one vaccine. The drop came later in the schedule, where the time and transport costs of repeat clinic visits can deter people from finishing (<a href="https://ssir.org/articles/entry/the_generalizability_puzzle" rel="noopener">Bates and Glennerster, 2017</a>).</p>
+<p>That case shows that uptake has stages. A programme can look successful at first contact and fail at completion.</p>
+<h3>Measure uptake as well as delivery</h3>
+<p>Administrative records count the people who showed up. They miss the people who did not. Four habits close the gap:</p>
+<ul><li><strong>Define the eligible population first.</strong> Then measure the share of that population who use the service.</li><li><strong>Separate the stages.</strong> Awareness, first use, repeat use and completion are different outcomes with different causes.</li><li><strong>Break results down.</strong> Distance, sex, income and location often explain who is missing. National and district averages hide these gaps (<button type="button" class="ilink" data-post="average-hides-development-problem">see how averages mislead</button>).</li><li><strong>Ask the people who did not use the service.</strong> Short interviews and focus group discussions give reasons that a survey of users cannot.</li></ul>
+<h3>When uptake is low, diagnose before redesigning</h3>
+<p>The fixes differ by cause. If price is the barrier, a lower price or free provision raises demand, as the Kenyan bed net trial showed. If unreliable supply is the barrier, reliability comes first, as in the Rajasthan camps. If the barrier is travel and time, bringing the service closer or bundling visits may matter more than any incentive.</p>
+<p>Guessing wrong is expensive. A programme that adds incentives when the real problem is a clinic that opens irregularly will spend money and see little change. Ask non-users first, pilot the fix on a small scale, and measure uptake again at each stage before scaling.</p>
+<h3>Questions to ask before launch</h3>
+<p>Run through the four doubts from the start of this article as design questions. What does the service cost a user, once travel and lost working time are included? Is it open when people can actually come? Do people trust the provider, and how would you find out? Does the design fit daily routines?</p>
+<p>Trust is the hardest of these to measure. Ask about it directly, in the community's own language, and listen for specifics such as past experiences with a clinic or office.</p>
+<p>When a programme works on paper, the evaluation question changes. It is no longer "was it delivered?" It becomes "why aren't people using it?"</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Cohen, J., and Dupas, P. (2010). Free distribution or cost-sharing? Evidence from a randomized malaria prevention experiment. Quarterly Journal of Economics, 125(1), 1-45. See the <a href="https://www.povertyactionlab.org/evaluation/free-distribution-or-cost-sharing-evidence-malaria-prevention-experiment-kenya" rel="noopener">J-PAL evaluation summary</a>.</li><li>Banerjee, A. V., Duflo, E., Glennerster, R., and Kothari, D. (2010). <a href="https://doi.org/10.1136/bmj.c2220" rel="noopener">Improving immunisation coverage in rural India</a>. BMJ, 340, c2220.</li><li>Bates, M. A., and Glennerster, R. (2017). <a href="https://ssir.org/articles/entry/the_generalizability_puzzle" rel="noopener">The generalizability puzzle</a>. Stanford Social Innovation Review, 15(3), 50-54.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="correlation-is-easy-explaining-why-is-hard"><span class="bm">Newer article</span><span class="bt">Correlation is easy. Explaining why is hard.</span></button><button type="button" class="bbox" data-post="evidence-based-policy-external-validity"><span class="bm">Older article</span><span class="bt">Evidence-based policy has a problem we don't talk about enough</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    <article class="rd" id="art-evidence-based-policy-external-validity" hidden>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+      <h2 class="rt" tabindex="-1">Evidence-based policy has a problem we don't talk about enough</h2>
+      <p class="meta"><time datetime="2026-04-06">6 April 2026</time> | 3 min read | By Kelly Kigan</p>
+      <p>We say we want evidence-based policy. We rarely ask whose evidence it is, or where it came from.</p>
+<p>A study run in one district, with one implementing partner, under close supervision, gets cited as proof that a program works. The program then scales to places with thinner staffing and tighter budgets. The results often shrink or disappear. This is the external validity problem: whether a finding from one setting holds in another.</p>
+<h3>Same contract, different result in Kenya</h3>
+<p>Kenya offers a clean test. An earlier study found that contract teachers managed by an NGO raised test scores in Western Kenya by 0.21 standard deviations (<a href="https://assets.publishing.service.gov.uk/media/57a08a38ed915d3cfd00065a/csae-wps-2013-04.pdf" rel="noopener">Bold et al., 2013</a>). In 2009 the government announced a national contract teacher program that would eventually employ 18,000 teachers.</p>
+<p>Researchers embedded a randomised trial in that scale-up. Some schools received teachers hired by the NGO World Vision Kenya. Others received teachers hired by the government on the same terms (<a href="https://www.povertyactionlab.org/node/8137850" rel="noopener">J-PAL summary</a>). The NGO teachers significantly raised student test scores. The government teachers produced zero impact (<a href="https://doi.org/10.1016/j.jpubeco.2018.08.007" rel="noopener">Bold et al., 2018</a>).</p>
+<p>Differences in teacher characteristics explained little of the gap. The authors point to bureaucratic and political opposition to the reform, which delayed implementation and led to a different reading of identical contract terms. The teachers' union, for example, demanded permanent civil service status for contract teachers (<a href="https://www.povertyactionlab.org/node/8137850" rel="noopener">J-PAL</a>).</p>
+<p>The lesson is not that contract teachers fail. A result depends on who delivers the program and under what conditions.</p>
+<h3>The pattern is wider than one program</h3>
+<p>Eva Vivalt assembled a large dataset of impact evaluation results and found a large amount of effect heterogeneity. Government-implemented programs had smaller effect sizes than programs run by academics or NGOs, even after controlling for sample size (<a href="https://doi.org/10.1093/jeea/jvaa019" rel="noopener">Vivalt, 2020</a>).</p>
+<p>That finding matters because ministries, not research teams, run most public programs. An evidence base built mainly on pilots can overstate what a stretched district office will deliver.</p>
+<h3>Timing widens the gap</h3>
+<p>Budgets are set on an annual cycle. A rigorous evaluation that follows households over several years can report after the money has been allocated. Decision-makers then use whatever evidence is at hand, including studies from settings that look nothing like theirs.</p>
+<h3>This is not an argument against evaluation</h3>
+<p>Bates and Glennerster make the opposite case. Rigorous evaluations, they argue, complement local data rather than replace it, and the real task is to pair evidence from elsewhere with information from the place you are working in (<a href="https://ssir.org/articles/entry/the_generalizability_puzzle" rel="noopener">Bates and Glennerster, 2017</a>). A trial from another country tells you about behaviour. Local data tells you whether the conditions for that behaviour exist. Policy needs both.</p>
+<h3>Four fixes that cost less than a new trial</h3>
+<ul><li><strong>Fund replication.</strong> The 3ie Replication Programme has funded more than 20 internal replications since 2012, which re-check whether published results hold up (<a href="https://3ieimpact.org/our-work/replication" rel="noopener">3ie</a>). Internal replication tests an analysis. Testing a program in a new setting needs its own funding line.</li><li><strong>Report implementation conditions next to effect sizes.</strong> Say who delivered the program, how many staff served each beneficiary, how closely they were supervised and what it cost per person. Vivalt's finding on implementers shows why readers need these facts.</li><li><strong>Ask "will this work here?" before "does this work?"</strong> Mary Ann Bates and Rachel Glennerster of J-PAL propose four questions. What theory sits behind the program? Do the local conditions that theory needs hold? How strong is the evidence for the behaviour change it relies on? Can implementation be done well? (<a href="https://ssir.org/articles/entry/the_generalizability_puzzle" rel="noopener">Bates and Glennerster, 2017</a>)</li><li><strong>Collect cheap local data before copying a program.</strong> Rwanda's government asked whether a Kenyan HIV-risk awareness program would work at home. Descriptive survey data collected over two weeks showed that Rwandan girls already understood the relative risk, so J-PAL did not recommend the program (<a href="https://ssir.org/articles/entry/the_generalizability_puzzle" rel="noopener">Bates and Glennerster, 2017</a>).</li></ul>
+<p>The next time a report calls a program proven, ask where it was tested and who delivered it.</p>
+      <section class="sources"><h3>Sources</h3><ol><li>Bold, T., Kimenyi, M., Mwabu, G., Ng'ang'a, A., and Sandefur, J. (2018). <a href="https://doi.org/10.1016/j.jpubeco.2018.08.007" rel="noopener">Experimental evidence on scaling up education reforms in Kenya</a>. Journal of Public Economics, 168, 1-20.</li><li>Bold, T., Kimenyi, M., Mwabu, G., Ng'ang'a, A., and Sandefur, J. (2013). <a href="https://assets.publishing.service.gov.uk/media/57a08a38ed915d3cfd00065a/csae-wps-2013-04.pdf" rel="noopener">Scaling up what works: experimental evidence on external validity in Kenyan education</a>. CSAE Working Paper 2013-04.</li><li>J-PAL. <a href="https://www.povertyactionlab.org/node/8137850" rel="noopener">The effect of a contract teacher program scale-up on student learning in Kenya</a>.</li><li>Vivalt, E. (2020). <a href="https://doi.org/10.1093/jeea/jvaa019" rel="noopener">How much can we generalize from impact evaluations?</a> Journal of the European Economic Association, 18(6), 3045-3089.</li><li>Bates, M. A., and Glennerster, R. (2017). <a href="https://ssir.org/articles/entry/the_generalizability_puzzle" rel="noopener">The generalizability puzzle</a>. Stanford Social Innovation Review, 15(3), 50-54.</li><li>3ie. <a href="https://3ieimpact.org/our-work/replication" rel="noopener">Replication programme</a>.</li></ol></section>
+      <div class="author"><p><strong>About the author.</strong> Kelly Kigan is a development research and advisory professional based in Kenya, working on evaluation, data analysis and evidence synthesis.</p><a class="btn" href="#contact" data-go="contact">Contact Kelly</a></div>
+      <nav class="pn" aria-label="More articles"><button type="button" class="bbox" data-post="programme-works-but-people-dont-use-it"><span class="bm">Newer article</span><span class="bt">What if the programme works, but people don't use it?</span></button></nav>
+      <div class="rbar"><button type="button" class="btn alt" data-act="back">All articles</button></div>
+    </article>
+    </div>
+    <noscript><nav aria-label="All articles"><ul><li><a href="blog/data-vs-community-voices.html">When the data says one thing and the community says another</a></li><li><a href="blog/average-hides-development-problem.html">The average can hide the development problem</a></li><li><a href="blog/best-statistical-tool-fits-the-question.html">The best statistical tool is the one that fits the question</a></li><li><a href="blog/what-learning-r-taught-me.html">What learning R taught me about quantitative research</a></li><li><a href="blog/stata-vs-excel.html">Stata vs Excel: which one should you use?</a></li><li><a href="blog/your-dataset-has-a-story.html">Your dataset has a story before you analyse it</a></li><li><a href="blog/africa-urban-infrastructure-gap.html">Where should Africa's urban infrastructure money go first?</a></li><li><a href="blog/correlation-is-easy-explaining-why-is-hard.html">Correlation is easy. Explaining why is hard.</a></li><li><a href="blog/programme-works-but-people-dont-use-it.html">What if the programme works, but people don't use it?</a></li><li><a href="blog/evidence-based-policy-external-validity.html">Evidence-based policy has a problem we don't talk about enough</a></li></ul></nav></noscript>
+  </section>
+
+  <section class="panel" id="contact" role="tabpanel" aria-labelledby="t-contact">
+    <h2>Contact</h2>
+    <p class="lead">Have a research or data question, or a project to collaborate on? Send a short description and I will reply.</p>
+    <div class="cgrid">
+      <a class="cbtn" href="mailto:kellykigan.kk@gmail.com"><b>Email</b><span>kellykigan.kk@gmail.com</span></a>
+      <a class="cbtn" href="https://www.linkedin.com/in/kellykigan/"><b>LinkedIn</b><span>linkedin.com/in/kellykigan</span></a>
+      <a class="cbtn" href="https://github.com/kellykigan"><b>GitHub</b><span>github.com/kellykigan</span></a>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Kelly Kigan</span>
+    <nav aria-label="Quick links"><a href="#about" data-go="about">About</a><a href="#resume" data-go="resume">Resume</a><a href="#portfolio" data-go="portfolio">Portfolio</a><a href="#certifications" data-go="certifications">Certifications</a><a href="#blog" data-go="blog">Blog</a><a href="#contact" data-go="contact">Contact</a></nav>
+  </footer>
+</div>
+
+</div>
+<script>
+(function () {
+  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+  var tabs = all('[data-tab]'), panels = all('.panel'), links = all('[data-go]');
+  var bar = document.querySelector('.tabs'), shell = document.querySelector('.main');
+  var content = document.getElementById('content'), skip = document.getElementById('skip');
+  var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  function y() { return window.pageYOffset || document.documentElement.scrollTop || 0; }
+
+  function centerTab(t) {
+    if (!bar || !t) { return; }
+    var left = t.offsetLeft - (bar.clientWidth - t.offsetWidth) / 2;
+    try { bar.scrollTo({ left: left, behavior: reduce ? 'auto' : 'smooth' }); } catch (e) { bar.scrollLeft = left; }
+  }
+
+  function show(id, push, user) {
+    var el = id ? document.getElementById(id) : null;
+    if (!el || el.className.indexOf('panel') === -1) { id = 'about'; }
+    panels.forEach(function (p) { p.classList.toggle('on', p.id === id); });
+    tabs.forEach(function (t) {
+      var on = t.getAttribute('data-tab') === id;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.setAttribute('tabindex', on ? '0' : '-1');
+      if (on) { centerTab(t); }
+    });
+    if (push) { try { history.replaceState(null, '', '#' + id); } catch (e) {} }
+    if (user && shell) {
+      var top = shell.getBoundingClientRect().top + y();
+      if (y() > top) { try { window.scrollTo(0, top); } catch (e) {} }
+    }
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () { show(t.getAttribute('data-tab'), true, true); });
+  });
+  if (bar) {
+    bar.addEventListener('keydown', function (e) {
+      var i = tabs.indexOf(document.activeElement), n = null;
+      if (i < 0) { return; }
+      if (e.key === 'ArrowRight') { n = (i + 1) % tabs.length; }
+      else if (e.key === 'ArrowLeft') { n = (i - 1 + tabs.length) % tabs.length; }
+      else if (e.key === 'Home') { n = 0; }
+      else if (e.key === 'End') { n = tabs.length - 1; }
+      if (n === null) { return; }
+      e.preventDefault(); tabs[n].focus(); show(tabs[n].getAttribute('data-tab'), true, false);
+    });
+  }
+  links.forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); show(a.getAttribute('data-go'), true, true); });
+  });
+  if (skip && content) {
+    skip.addEventListener('click', function (e) { e.preventDefault(); content.focus(); });
+  }
+  window.addEventListener('hashchange', function () {
+    var id = location.hash.slice(1), el = id ? document.getElementById(id) : null;
+    if (el && el.className.indexOf('panel') !== -1) { show(id, false, true); }
+  });
+  show(location.hash.slice(1), false, false);
+
+  var defs = all('[data-def]');
+  defs.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var wasOpen = b.getAttribute('aria-expanded') === 'true';
+      defs.forEach(function (x) {
+        var on = !wasOpen && x === b, box = document.getElementById(x.getAttribute('data-def'));
+        x.setAttribute('aria-expanded', on ? 'true' : 'false');
+        if (box) { box.classList.toggle('on', on); }
+      });
+      var r = b.getBoundingClientRect();
+      if (r.top < 60 || r.top > window.innerHeight - 80) {
+        try { b.scrollIntoView({ block: 'start', behavior: reduce ? 'auto' : 'smooth' }); } catch (e) {}
+      }
+    });
+  });
+
+  /* CERTIFICATIONS: add one by copying a line into the list below.
+     {group:"Data",title:"Certificate name",issuer:"Issuer",year:"2026",link:"https://credential-url"}, */
+  var certs = [
+    {group: "Data", title: "IBM Data Analyst Professional Certificate", issuer: "Coursera", year: "2026"},
+    {group: "Data", title: "Google Data Analytics Professional Certificate", issuer: "Google, Coursera", year: "2026"},
+    {group: "AI", title: "Google AI Professional Certificate", issuer: "Google, Coursera", year: "2026"},
+    {group: "AI", title: "AI Fluency for Nonprofits", issuer: "Claude Academy", year: "2026"}
+  ];
+  var certBox = document.getElementById('certList');
+  if (certBox) {
+    var groups = [];
+    certs.forEach(function (c) { if (groups.indexOf(c.group) === -1) { groups.push(c.group); } });
+    groups.forEach(function (g) {
+      var h = document.createElement('h3'); h.textContent = g;
+      var grid = document.createElement('div'); grid.className = 'certs';
+      certs.filter(function (c) { return c.group === g; }).forEach(function (c) {
+        var card = document.createElement('div'); card.className = 'cert';
+        var t = document.createElement('b'); t.textContent = c.title || '';
+        var m = document.createElement('span'); m.textContent = [c.issuer, c.year].filter(Boolean).join(' | ');
+        card.appendChild(t); card.appendChild(m);
+        if (c.link) {
+          var a = document.createElement('a'); a.className = 'btn alt'; a.href = c.link;
+          a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'View credential';
+          card.appendChild(a);
+        }
+        grid.appendChild(card);
+      });
+      certBox.appendChild(h); certBox.appendChild(grid);
+    });
+  }
+
+  /* BLOG: add a post by copying the example line into the list below.
+     {title:"Post title",date:"12 October 2026",summary:"One or two sentences.",link:"https://example.com"}, */
+  var posts = [
+  ];
+  var list = document.getElementById('blogList');
+  if (list) {
+    if (posts.length) {
+      posts.forEach(function (p) {
+        var d = document.createElement('article'); d.className = 'post';
+        var t = document.createElement('time'); t.textContent = p.date || '';
+        var h = document.createElement('h3'), a = document.createElement(p.link ? 'a' : 'span');
+        a.textContent = p.title || ''; if (p.link) { a.href = p.link; }
+        h.appendChild(a);
+        var s = document.createElement('p'); s.textContent = p.summary || '';
+        d.appendChild(t); d.appendChild(h); d.appendChild(s); list.appendChild(d);
+      });
+    }
+  }
+
+  /* BLOG READER: boxes open the article inside the page. The links still point to standalone pages for search engines and sharing. */
+  var reader = document.getElementById('blogReader'), blogLead = document.getElementById('blogLead');
+  function hideAll() {
+    if (!reader) { return; }
+    var arts = reader.querySelectorAll('.rd');
+    for (var i = 0; i < arts.length; i++) { arts[i].hidden = true; }
+  }
+  function closePost() {
+    if (!reader) { return; }
+    hideAll(); reader.hidden = true;
+    if (list) { list.hidden = false; }
+    if (blogLead) { blogLead.hidden = false; }
+  }
+  function openPost(slug, push) {
+    var art = document.getElementById('art-' + slug);
+    if (!art || !reader || !list) { return false; }
+    hideAll(); art.hidden = false; reader.hidden = false; list.hidden = true;
+    if (blogLead) { blogLead.hidden = true; }
+    show('blog', false, true);
+    if (push) { try { history.replaceState(null, '', '#blog-' + slug); } catch (e) {} }
+    var h = art.querySelector('.rt');
+    if (h) { try { h.focus({ preventScroll: true }); } catch (e) { h.focus(); } }
+    return true;
+  }
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest) { return; }
+    var a = e.target.closest('[data-post]');
+    if (a) {
+      openPost(a.getAttribute('data-post'), true);
+      return;
+    }
+    if (e.target.closest('[data-act="back"]')) {
+      closePost();
+      try { history.replaceState(null, '', '#blog'); } catch (er) {}
+      show('blog', false, true);
+      return;
+    }
+    var g = e.target.closest('#blogReader a[data-go]');
+    if (g) { e.preventDefault(); closePost(); show(g.getAttribute('data-go'), true, true); }
+  });
+  var blogTab = document.querySelector('[data-tab="blog"]');
+  if (blogTab) { blogTab.addEventListener('click', closePost); }
+  function routeBlogHash() {
+    var m = /^#blog-(.+)$/.exec(location.hash);
+    if (m) { openPost(m[1], false); }
+  }
+  window.addEventListener('hashchange', routeBlogHash);
+  routeBlogHash();
+})();
+</script>
+</body>
+</html>
